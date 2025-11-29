@@ -1,0 +1,169 @@
+Country,Indicator,Source,Unit,Currency,Frequency,Country Code,Time,Amount,Amount_numeric,Year,Month,Quarter,Unit_key,Unit_category,Unit_multiplier,Amount_standardised,Amount_fraction,is_duplicate,freq_rank,abs_amount,row_id,relative_diff,kept_row_id
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,-56213,-56213.0,2007.0,1.0,1.0,million,currency_billions,0.001,-56.213,,True,2,56213.0,0,0.48275309981676834,0
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,-29076,-29076.0,2007.0,1.0,1.0,million,currency_billions,0.001,-29.076,,True,2,29076.0,19,0.48275309981676834,0
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,-67563,-67563.0,2008.0,1.0,1.0,million,currency_billions,0.001,-67.563,,True,2,67563.0,1,0.25365954738540325,1
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,-50425,-50425.0,2008.0,1.0,1.0,million,currency_billions,0.001,-50.425000000000004,,True,2,50425.0,23,0.25365954738540325,1
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,-72379,-72379.0,2009.0,1.0,1.0,million,currency_billions,0.001,-72.379,,True,2,72379.0,2,0.18083974633526298,2
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,-59290,-59290.0,2009.0,1.0,1.0,million,currency_billions,0.001,-59.29,,True,2,59290.0,27,0.18083974633526298,2
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,-98886,-98886.0,2010.0,1.0,1.0,million,currency_billions,0.001,-98.886,,True,2,98886.0,3,0.06603563699613696,3
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,-92356,-92356.0,2010.0,1.0,1.0,million,currency_billions,0.001,-92.35600000000001,,True,2,92356.0,31,0.06603563699613696,3
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,-134138,-134138.0,2011.0,1.0,1.0,million,currency_billions,0.001,-134.138,,True,2,134138.0,4,0.27530602812029403,4
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,-97209,-97209.0,2011.0,1.0,1.0,million,currency_billions,0.001,-97.209,,True,2,97209.0,35,0.27530602812029403,4
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,-165689,-165689.0,2012.0,1.0,1.0,million,currency_billions,0.001,-165.689,,True,2,165689.0,5,0.2994888013084755,5
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,-116067,-116067.0,2012.0,1.0,1.0,million,currency_billions,0.001,-116.06700000000001,,True,2,116067.0,39,0.2994888013084755,5
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,-246853,-246853.0,2013.0,1.0,1.0,million,currency_billions,0.001,-246.853,,True,2,246853.0,6,0.2659882602196449,6
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,-181193,-181193.0,2013.0,1.0,1.0,million,currency_billions,0.001,-181.193,,True,2,181193.0,43,0.2659882602196449,6
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,-254715,-254715.0,2014.0,1.0,1.0,million,currency_billions,0.001,-254.715,,True,2,254715.0,7,0.4096696307637948,7
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,-150366,-150366.0,2014.0,1.0,1.0,million,currency_billions,0.001,-150.366,,True,2,150366.0,47,0.4096696307637948,7
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,-284314,-284314.0,2015.0,1.0,1.0,million,currency_billions,0.001,-284.314,,True,2,284314.0,8,0.18141913518152467,8
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,-232734,-232734.0,2015.0,1.0,1.0,million,currency_billions,0.001,-232.734,,True,2,232734.0,51,0.18141913518152467,8
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,-366401,-366401.0,2017.0,1.0,1.0,million,currency_billions,0.001,-366.401,,True,2,366401.0,10,0.24262215441551743,10
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,-277504,-277504.0,2017.0,1.0,1.0,million,currency_billions,0.001,-277.504,,True,2,277504.0,59,0.24262215441551743,10
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,-425385,-425385.0,2018.0,1.0,1.0,million,currency_billions,0.001,-425.385,,True,2,425385.0,11,0.32898198102895027,11
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,-285441,-285441.0,2018.0,1.0,1.0,million,currency_billions,0.001,-285.44100000000003,,True,2,285441.0,63,0.32898198102895027,11
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,-423019,-423019.0,2019.0,1.0,1.0,million,currency_billions,0.001,-423.019,,True,2,423019.0,12,0.2813041494590077,12
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,-304022,-304022.0,2019.0,1.0,1.0,million,currency_billions,0.001,-304.022,,True,2,304022.0,67,0.2813041494590077,12
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,-408509,-408509.0,2020.0,1.0,1.0,million,currency_billions,0.001,-408.509,,True,2,408509.0,13,0.2969799930968473,13
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,-287190,-287190.0,2020.0,1.0,1.0,million,currency_billions,0.001,-287.19,,True,2,287190.0,71,0.2969799930968473,13
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,-459449,-459449.0,2021.0,1.0,1.0,million,currency_billions,0.001,-459.449,,True,2,459449.0,14,0.2713924722874574,14
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,-334758,-334758.0,2021.0,1.0,1.0,million,currency_billions,0.001,-334.758,,True,2,334758.0,75,0.2713924722874574,14
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,-477486,-477486.0,2022.0,1.0,1.0,million,currency_billions,0.001,-477.486,,True,2,477486.0,15,0.23578073493254254,15
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,-364904,-364904.0,2022.0,1.0,1.0,million,currency_billions,0.001,-364.904,,True,2,364904.0,79,0.23578073493254254,15
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,-580182,-580182.0,2023.0,1.0,1.0,million,currency_billions,0.001,-580.182,,True,2,580182.0,16,0.11261638589270263,16
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,-514844,-514844.0,2023.0,1.0,1.0,million,currency_billions,0.001,-514.844,,True,2,514844.0,83,0.11261638589270263,16
+Ivory Coast,Consumer Price Index (CPI),Central Bank of West African States,Points,,Monthly,CIV,2025-01-01,99.2,99.2,2025.0,1.0,1.0,points,index_points,1.0,99.2,,True,0,99.2,2844,0.034079844206426485,3201
+Ivory Coast,Consumer Price Index (CPI),Central Bank of West African States,Points,,Monthly,CIV,2025-01-01,102.7,102.7,2025.0,1.0,1.0,points,index_points,1.0,102.7,,True,0,102.7,3201,0.034079844206426485,3201
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,17718,17718.0,2007.0,1.0,1.0,million,currency_billions,0.001,17.718,,True,2,17718.0,4930,0.2714188960379275,4930
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,12909,12909.0,2007.0,1.0,1.0,million,currency_billions,0.001,12.909,,True,2,12909.0,4949,0.2714188960379275,4930
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,19849,19849.0,2008.0,1.0,1.0,million,currency_billions,0.001,19.849,,True,2,19849.0,4931,0.295077837674442,4931
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,13992,13992.0,2008.0,1.0,1.0,million,currency_billions,0.001,13.992,,True,2,13992.0,4953,0.295077837674442,4931
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,22267,22267.0,2009.0,1.0,1.0,million,currency_billions,0.001,22.267,,True,2,22267.0,4932,0.2583643957425787,4932
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,16514,16514.0,2009.0,1.0,1.0,million,currency_billions,0.001,16.514,,True,2,16514.0,4957,0.2583643957425787,4932
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,23453,23453.0,2010.0,1.0,1.0,million,currency_billions,0.001,23.453,,True,2,23453.0,4933,0.2486675478616808,4933
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,17621,17621.0,2010.0,1.0,1.0,million,currency_billions,0.001,17.621,,True,2,17621.0,4961,0.2486675478616808,4933
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,26484,26484.0,2011.0,1.0,1.0,million,currency_billions,0.001,26.484,,True,2,26484.0,4934,0.2637063887630267,4934
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,19500,19500.0,2011.0,1.0,1.0,million,currency_billions,0.001,19.5,,True,2,19500.0,4965,0.2637063887630267,4934
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,26018,26018.0,2012.0,1.0,1.0,million,currency_billions,0.001,26.018,,True,2,26018.0,4935,0.27281113075563074,4935
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,18920,18920.0,2012.0,1.0,1.0,million,currency_billions,0.001,18.92,,True,2,18920.0,4969,0.27281113075563074,4935
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,28739,28739.0,2013.0,1.0,1.0,million,currency_billions,0.001,28.739,,True,2,28739.0,4936,0.2665367618915063,4936
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,21079,21079.0,2013.0,1.0,1.0,million,currency_billions,0.001,21.079,,True,2,21079.0,4973,0.2665367618915063,4936
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,31844,31844.0,2014.0,1.0,1.0,million,currency_billions,0.001,31.844,,True,2,31844.0,4937,0.3236716492902902,4937
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,21537,21537.0,2014.0,1.0,1.0,million,currency_billions,0.001,21.537,,True,2,21537.0,4977,0.3236716492902902,4937
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,41477,41477.0,2015.0,1.0,1.0,million,currency_billions,0.001,41.477000000000004,,True,2,41477.0,4938,0.3046507703064349,4938
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,28841,28841.0,2015.0,1.0,1.0,million,currency_billions,0.001,28.841,,True,2,28841.0,4981,0.3046507703064349,4938
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,48934,48934.0,2017.0,1.0,1.0,million,currency_billions,0.001,48.934,,True,2,48934.0,4940,0.25293252135529487,4940
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,36557,36557.0,2017.0,1.0,1.0,million,currency_billions,0.001,36.557,,True,2,36557.0,4989,0.25293252135529487,4940
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,55002,55002.0,2018.0,1.0,1.0,million,currency_billions,0.001,55.002,,True,2,55002.0,4941,0.2296643758408785,4941
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,42370,42370.0,2018.0,1.0,1.0,million,currency_billions,0.001,42.37,,True,2,42370.0,4993,0.2296643758408785,4941
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,61582,61582.0,2019.0,1.0,1.0,million,currency_billions,0.001,61.582,,True,2,61582.0,4942,0.20444285667889966,4942
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,48992,48992.0,2019.0,1.0,1.0,million,currency_billions,0.001,48.992000000000004,,True,2,48992.0,4997,0.20444285667889966,4942
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,66868,66868.0,2020.0,1.0,1.0,million,currency_billions,0.001,66.868,,True,2,66868.0,4943,0.23486570556918107,4943
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,51163,51163.0,2020.0,1.0,1.0,million,currency_billions,0.001,51.163000000000004,,True,2,51163.0,5001,0.23486570556918107,4943
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,79426,79426.0,2021.0,1.0,1.0,million,currency_billions,0.001,79.426,,True,2,79426.0,4944,0.2597260342960743,4944
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,58797,58797.0,2021.0,1.0,1.0,million,currency_billions,0.001,58.797000000000004,,True,2,58797.0,5005,0.2597260342960743,4944
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,89708,89708.0,2022.0,1.0,1.0,million,currency_billions,0.001,89.708,,True,2,89708.0,4945,0.26931823248762654,4945
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,65548,65548.0,2022.0,1.0,1.0,million,currency_billions,0.001,65.548,,True,2,65548.0,5009,0.26931823248762654,4945
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,100966,100966.0,2023.0,1.0,1.0,million,currency_billions,0.001,100.96600000000001,,True,2,100966.0,4946,0.2637224412178357,4946
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,74339,74339.0,2023.0,1.0,1.0,million,currency_billions,0.001,74.339,,True,2,74339.0,5013,0.2637224412178357,4946
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,244018,244018.0,2007.0,1.0,1.0,million,currency_billions,0.001,244.018,,True,2,244018.0,5089,0.41278922046734257,5089
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,143290,143290.0,2007.0,1.0,1.0,million,currency_billions,0.001,143.29,,True,2,143290.0,5108,0.41278922046734257,5089
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,305795,305795.0,2008.0,1.0,1.0,million,currency_billions,0.001,305.795,,True,2,305795.0,5090,0.35487826812079987,5090
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,197275,197275.0,2008.0,1.0,1.0,million,currency_billions,0.001,197.275,,True,2,197275.0,5112,0.35487826812079987,5090
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,356944,356944.0,2009.0,1.0,1.0,million,currency_billions,0.001,356.944,,True,2,356944.0,5091,0.3078914339504236,5091
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,247044,247044.0,2009.0,1.0,1.0,million,currency_billions,0.001,247.044,,True,2,247044.0,5116,0.3078914339504236,5091
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,396768,396768.0,2010.0,1.0,1.0,million,currency_billions,0.001,396.76800000000003,,True,2,396768.0,5092,0.3419630615372207,5092
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,261088,261088.0,2010.0,1.0,1.0,million,currency_billions,0.001,261.088,,True,2,261088.0,5120,0.3419630615372207,5092
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,440410,440410.0,2011.0,1.0,1.0,million,currency_billions,0.001,440.41,,True,2,440410.0,5093,0.39248654662700666,5093
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,267555,267555.0,2011.0,1.0,1.0,million,currency_billions,0.001,267.555,,True,2,267555.0,5124,0.39248654662700666,5093
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,516422,516422.0,2012.0,1.0,1.0,million,currency_billions,0.001,516.422,,True,2,516422.0,5094,0.3240934739418538,5094
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,349053,349053.0,2012.0,1.0,1.0,million,currency_billions,0.001,349.053,,True,2,349053.0,5128,0.3240934739418538,5094
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,644080,644080.0,2013.0,1.0,1.0,million,currency_billions,0.001,644.08,,True,2,644080.0,5095,0.34217643770960127,5095
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,423691,423691.0,2013.0,1.0,1.0,million,currency_billions,0.001,423.69100000000003,,True,2,423691.0,5132,0.34217643770960127,5095
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,759847,759847.0,2014.0,1.0,1.0,million,currency_billions,0.001,759.847,,True,2,759847.0,5096,0.3855091880339068,5096
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,466919,466919.0,2014.0,1.0,1.0,million,currency_billions,0.001,466.919,,True,2,466919.0,5136,0.3855091880339068,5096
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,805929,805929.0,2015.0,1.0,1.0,million,currency_billions,0.001,805.929,,True,2,805929.0,5097,0.3194003441990548,5097
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,548515,548515.0,2015.0,1.0,1.0,million,currency_billions,0.001,548.515,,True,2,548515.0,5140,0.3194003441990548,5097
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,1116985,1116985.0,2017.0,1.0,1.0,million,currency_billions,0.001,1116.9850000000001,,True,2,1116985.0,5099,0.37635151770167014,5099
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,696606,696606.0,2017.0,1.0,1.0,million,currency_billions,0.001,696.606,,True,2,696606.0,5148,0.37635151770167014,5099
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,1335980,1335980.0,2018.0,1.0,1.0,million,currency_billions,0.001,1335.98,,True,2,1335980.0,5100,0.35972020539229627,5100
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,855401,855401.0,2018.0,1.0,1.0,million,currency_billions,0.001,855.4010000000001,,True,2,855401.0,5152,0.35972020539229627,5100
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,1505187,1505187.0,2019.0,1.0,1.0,million,currency_billions,0.001,1505.1870000000001,,True,2,1505187.0,5101,0.33859248053564106,5101
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,995542,995542.0,2019.0,1.0,1.0,million,currency_billions,0.001,995.542,,True,2,995542.0,5156,0.33859248053564106,5101
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,1580934,1580934.0,2020.0,1.0,1.0,million,currency_billions,0.001,1580.934,,True,2,1580934.0,5102,0.3269997355993356,5102
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,1063969,1063969.0,2020.0,1.0,1.0,million,currency_billions,0.001,1063.969,,True,2,1063969.0,5160,0.3269997355993356,5102
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,1729464,1729464.0,2021.0,1.0,1.0,million,currency_billions,0.001,1729.464,,True,2,1729464.0,5103,0.3044642733239894,5103
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,1202904,1202904.0,2021.0,1.0,1.0,million,currency_billions,0.001,1202.904,,True,2,1202904.0,5164,0.3044642733239894,5103
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,1937165,1937165.0,2022.0,1.0,1.0,million,currency_billions,0.001,1937.165,,True,2,1937165.0,5104,0.346418090353687,5104
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,1266096,1266096.0,2022.0,1.0,1.0,million,currency_billions,0.001,1266.096,,True,2,1266096.0,5168,0.346418090353687,5104
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,2309495,2309495.0,2023.0,1.0,1.0,million,currency_billions,0.001,2309.495,,True,2,2309495.0,5105,0.3248277220777703,5105
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,1559307,1559307.0,2023.0,1.0,1.0,million,currency_billions,0.001,1559.307,,True,2,1559307.0,5172,0.3248277220777703,5105
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,205654,205654.0,2007.0,1.0,1.0,million,currency_billions,0.001,205.654,,True,2,205654.0,20676,0.40267633987182355,20676
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,122842,122842.0,2007.0,1.0,1.0,million,currency_billions,0.001,122.842,,True,2,122842.0,20695,0.40267633987182355,20676
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,248835,248835.0,2008.0,1.0,1.0,million,currency_billions,0.001,248.835,,True,2,248835.0,20677,0.39042337291779694,20677
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,151684,151684.0,2008.0,1.0,1.0,million,currency_billions,0.001,151.684,,True,2,151684.0,20699,0.39042337291779694,20677
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,288545,288545.0,2009.0,1.0,1.0,million,currency_billions,0.001,288.545,,True,2,288545.0,20678,0.3319308946611447,20678
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,192768,192768.0,2009.0,1.0,1.0,million,currency_billions,0.001,192.768,,True,2,192768.0,20703,0.3319308946611447,20678
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,303361,303361.0,2010.0,1.0,1.0,million,currency_billions,0.001,303.361,,True,2,303361.0,20679,0.42253288985729875,20679
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,175181,175181.0,2010.0,1.0,1.0,million,currency_billions,0.001,175.181,,True,2,175181.0,20707,0.42253288985729875,20679
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,302010,302010.0,2011.0,1.0,1.0,million,currency_billions,0.001,302.01,,True,2,302010.0,20680,0.4433131353266448,20680
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,168125,168125.0,2011.0,1.0,1.0,million,currency_billions,0.001,168.125,,True,2,168125.0,20711,0.4433131353266448,20680
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,348865,348865.0,2012.0,1.0,1.0,million,currency_billions,0.001,348.865,,True,2,348865.0,20681,0.3404526106086882,20681
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,230093,230093.0,2012.0,1.0,1.0,million,currency_billions,0.001,230.09300000000002,,True,2,230093.0,20715,0.3404526106086882,20681
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,403637,403637.0,2013.0,1.0,1.0,million,currency_billions,0.001,403.637,,True,2,403637.0,20682,0.3939282077708436,20682
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,244633,244633.0,2013.0,1.0,1.0,million,currency_billions,0.001,244.633,,True,2,244633.0,20719,0.3939282077708436,20682
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,519449,519449.0,2014.0,1.0,1.0,million,currency_billions,0.001,519.449,,True,2,519449.0,20683,0.3770745539985639,20683
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,323578,323578.0,2014.0,1.0,1.0,million,currency_billions,0.001,323.57800000000003,,True,2,323578.0,20723,0.3770745539985639,20683
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,538378,538378.0,2015.0,1.0,1.0,million,currency_billions,0.001,538.378,,True,2,538378.0,20684,0.39056759377240524,20684
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,328105,328105.0,2015.0,1.0,1.0,million,currency_billions,0.001,328.105,,True,2,328105.0,20727,0.39056759377240524,20684
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,755110,755110.0,2017.0,1.0,1.0,million,currency_billions,0.001,755.11,,True,2,755110.0,20686,0.442678550145012,20686
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,420839,420839.0,2017.0,1.0,1.0,million,currency_billions,0.001,420.839,,True,2,420839.0,20735,0.442678550145012,20686
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,915974,915974.0,2018.0,1.0,1.0,million,currency_billions,0.001,915.974,,True,2,915974.0,20687,0.37992235587473006,20687
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,567975,567975.0,2018.0,1.0,1.0,million,currency_billions,0.001,567.975,,True,2,567975.0,20739,0.37992235587473006,20687
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,1080152,1080152.0,2019.0,1.0,1.0,million,currency_billions,0.001,1080.152,,True,2,1080152.0,20688,0.3660966234381828,20688
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,684712,684712.0,2019.0,1.0,1.0,million,currency_billions,0.001,684.712,,True,2,684712.0,20743,0.3660966234381828,20688
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,1121422,1121422.0,2020.0,1.0,1.0,million,currency_billions,0.001,1121.422,,True,2,1121422.0,20689,0.35076358409233993,20689
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,728068,728068.0,2020.0,1.0,1.0,million,currency_billions,0.001,728.068,,True,2,728068.0,20747,0.35076358409233993,20689
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,1266027,1266027.0,2021.0,1.0,1.0,million,currency_billions,0.001,1266.027,,True,2,1266027.0,20690,0.3164932501439543,20690
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,865338,865338.0,2021.0,1.0,1.0,million,currency_billions,0.001,865.338,,True,2,865338.0,20751,0.3164932501439543,20690
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,1483977,1483977.0,2022.0,1.0,1.0,million,currency_billions,0.001,1483.977,,True,2,1483977.0,20691,0.3866643485714401,20691
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,910176,910176.0,2022.0,1.0,1.0,million,currency_billions,0.001,910.176,,True,2,910176.0,20755,0.3866643485714401,20691
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,1723717,1723717.0,2023.0,1.0,1.0,million,currency_billions,0.001,1723.717,,True,2,1723717.0,20692,0.3924298478230475,20692
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,1047279,1047279.0,2023.0,1.0,1.0,million,currency_billions,0.001,1047.279,,True,2,1047279.0,20759,0.3924298478230475,20692
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,114326,114326.0,2007.0,1.0,1.0,million,currency_billions,0.001,114.32600000000001,,True,2,114326.0,22428,0.4377044591781397,22428
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2007-01-01,64285,64285.0,2007.0,1.0,1.0,million,currency_billions,0.001,64.285,,True,2,64285.0,22447,0.4377044591781397,22428
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,137195,137195.0,2008.0,1.0,1.0,million,currency_billions,0.001,137.195,,True,2,137195.0,22429,0.36093880972338643,22429
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2008-01-01,87676,87676.0,2008.0,1.0,1.0,million,currency_billions,0.001,87.676,,True,2,87676.0,22451,0.36093880972338643,22429
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,163222,163222.0,2009.0,1.0,1.0,million,currency_billions,0.001,163.222,,True,2,163222.0,22430,0.3316954822266606,22430
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2009-01-01,109082,109082.0,2009.0,1.0,1.0,million,currency_billions,0.001,109.08200000000001,,True,2,109082.0,22455,0.3316954822266606,22430
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,170494,170494.0,2010.0,1.0,1.0,million,currency_billions,0.001,170.494,,True,2,170494.0,22431,0.37884031109599164,22431
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2010-01-01,105904,105904.0,2010.0,1.0,1.0,million,currency_billions,0.001,105.904,,True,2,105904.0,22459,0.37884031109599164,22431
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,192072,192072.0,2011.0,1.0,1.0,million,currency_billions,0.001,192.072,,True,2,192072.0,22432,0.43058332292057144,22432
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2011-01-01,109369,109369.0,2011.0,1.0,1.0,million,currency_billions,0.001,109.369,,True,2,109369.0,22463,0.43058332292057144,22432
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,207410,207410.0,2012.0,1.0,1.0,million,currency_billions,0.001,207.41,,True,2,207410.0,22433,0.36218118702087654,22433
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2012-01-01,132290,132290.0,2012.0,1.0,1.0,million,currency_billions,0.001,132.29,,True,2,132290.0,22467,0.36218118702087654,22433
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,251118,251118.0,2013.0,1.0,1.0,million,currency_billions,0.001,251.118,,True,2,251118.0,22434,0.3787223536345463,22434
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2013-01-01,156014,156014.0,2013.0,1.0,1.0,million,currency_billions,0.001,156.014,,True,2,156014.0,22471,0.3787223536345463,22434
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,260289,260289.0,2014.0,1.0,1.0,million,currency_billions,0.001,260.289,,True,2,260289.0,22435,0.35087921502637454,22435
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2014-01-01,168959,168959.0,2014.0,1.0,1.0,million,currency_billions,0.001,168.959,,True,2,168959.0,22475,0.35087921502637454,22435
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,305957,305957.0,2015.0,1.0,1.0,million,currency_billions,0.001,305.957,,True,2,305957.0,22436,0.33028824311913113,22436
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2015-01-01,204903,204903.0,2015.0,1.0,1.0,million,currency_billions,0.001,204.903,,True,2,204903.0,22479,0.33028824311913113,22436
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2016-01-01,352315,352315.0,2016.0,1.0,1.0,million,currency_billions,0.001,352.315,,True,2,352315.0,22437,0.3970197124732129,22437
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2016-01-01,212439,212439.0,2016.0,1.0,1.0,million,currency_billions,0.001,212.439,,True,2,212439.0,22483,0.3970197124732129,22437
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,462007,462007.0,2017.0,1.0,1.0,million,currency_billions,0.001,462.007,,True,2,462007.0,22438,0.41785297625360657,22438
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2017-01-01,268956,268956.0,2017.0,1.0,1.0,million,currency_billions,0.001,268.956,,True,2,268956.0,22487,0.41785297625360657,22438
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,628083,628083.0,2018.0,1.0,1.0,million,currency_billions,0.001,628.083,,True,2,628083.0,22439,0.35802115325522266,22439
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2018-01-01,403216,403216.0,2018.0,1.0,1.0,million,currency_billions,0.001,403.216,,True,2,403216.0,22491,0.35802115325522266,22439
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,736121,736121.0,2019.0,1.0,1.0,million,currency_billions,0.001,736.121,,True,2,736121.0,22440,0.36367798228823794,22440
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2019-01-01,468410,468410.0,2019.0,1.0,1.0,million,currency_billions,0.001,468.41,,True,2,468410.0,22495,0.36367798228823794,22440
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,739633,739633.0,2020.0,1.0,1.0,million,currency_billions,0.001,739.633,,True,2,739633.0,22441,0.35839396024785264,22441
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2020-01-01,474553,474553.0,2020.0,1.0,1.0,million,currency_billions,0.001,474.553,,True,2,474553.0,22499,0.35839396024785264,22441
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,833993,833993.0,2021.0,1.0,1.0,million,currency_billions,0.001,833.993,,True,2,833993.0,22442,0.3541924212793153,22442
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2021-01-01,538599,538599.0,2021.0,1.0,1.0,million,currency_billions,0.001,538.599,,True,2,538599.0,22503,0.3541924212793153,22442
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,990138,990138.0,2022.0,1.0,1.0,million,currency_billions,0.001,990.138,,True,2,990138.0,22443,0.38626938871147254,22443
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2022-01-01,607678,607678.0,2022.0,1.0,1.0,million,currency_billions,0.001,607.678,,True,2,607678.0,22507,0.38626938871147254,22443
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,1258582,1258582.0,2023.0,1.0,1.0,million,currency_billions,0.001,1258.582,,True,2,1258582.0,22444,0.41146305922061494,22444
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Yearly,EGY,2023-01-01,740722,740722.0,2023.0,1.0,1.0,million,currency_billions,0.001,740.722,,True,2,740722.0,22511,0.41146305922061494,22444
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Yearly,EGY,2023-01-01,7,7.0,2023.0,1.0,1.0,%,percentage,1.0,7.0,0.07,True,2,7.0,23206,0.014084507042253471,23216
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Yearly,EGY,2023-01-01,7.1,7.1,2023.0,1.0,1.0,%,percentage,1.0,7.1,0.071,True,2,7.1,23216,0.014084507042253471,23216
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Yearly,EGY,2024-01-01,6.6,6.6,2024.0,1.0,1.0,%,percentage,1.0,6.6,0.066,True,2,6.6,23207,0.014925373134328438,23220
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Yearly,EGY,2024-01-01,6.7,6.7,2024.0,1.0,1.0,%,percentage,1.0,6.7,0.067,True,2,6.7,23220,0.014925373134328438,23220

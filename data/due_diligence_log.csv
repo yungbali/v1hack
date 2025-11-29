@@ -1,0 +1,3 @@
+date,country,indicator,issue_type,action_taken,decision_owner,evidence_link
+2025-11-29,ALL,ALL,frequency_reclassification,"Reclassified mislabelled yearly series to quarterly/biannual frequency based on observed month patterns before time alignment.",Data Analytics,"scripts/fiscal_data_audit.py"
+2025-11-29,Egypt,"Budget Deficit/Surplus; Defence Expenditure; Expenditure; Revenue; Tax Revenue; Unemployment Rate",duplicate_resolution,"Automatically resolved low-spread duplicate groups and logged remaining cases for manual review (see fiscal_duplicate_resolution_log.csv).",Data Analytics,"data/processed/fiscal_duplicate_resolution_log.csv"

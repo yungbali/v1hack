@@ -1,0 +1,108 @@
+{
+  "rows": 23777,
+  "countries": 14,
+  "indicators": 25,
+  "year_min": 1960,
+  "year_max": 2025,
+  "unit_category_distribution": {
+    "currency_billions": 12322,
+    "percentage": 7877,
+    "index_points": 2849,
+    "population_count": 474,
+    "currency_usd": 230,
+    "unknown": 25
+  },
+  "missing_value_share": {
+    "Amount_fraction": 0.6699,
+    "Currency": 0.4416,
+    "Amount": 0.0023,
+    "Amount_numeric": 0.0023,
+    "Amount_standardised": 0.0023,
+    "Year": 0.0002,
+    "Month": 0.0002,
+    "Time": 0.0002,
+    "Time_aligned": 0.0002,
+    "Quarter": 0.0002,
+    "Indicator": 0.0,
+    "Country": 0.0,
+    "Unit": 0.0,
+    "Source": 0.0,
+    "Frequency": 0.0,
+    "Country Code": 0.0,
+    "Unit_category": 0.0,
+    "Unit_key": 0.0,
+    "Unit_multiplier": 0.0,
+    "is_duplicate": 0.0
+  },
+  "duplicate_records_flagged": 510,
+  "duplicate_sample": [
+    {
+      "Country": "Senegal",
+      "Indicator": "Consumer Price Index (CPI)",
+      "duplicate_count": 300
+    },
+    {
+      "Country": "Egypt",
+      "Indicator": "Tax Revenue",
+      "duplicate_count": 34
+    },
+    {
+      "Country": "Egypt",
+      "Indicator": "Budget Deficit/Surplus",
+      "duplicate_count": 32
+    },
+    {
+      "Country": "Egypt",
+      "Indicator": "Defence Expenditure",
+      "duplicate_count": 32
+    },
+    {
+      "Country": "Egypt",
+      "Indicator": "Revenue",
+      "duplicate_count": 32
+    },
+    {
+      "Country": "Egypt",
+      "Indicator": "Expenditure",
+      "duplicate_count": 32
+    },
+    {
+      "Country": "Senegal",
+      "Indicator": "Food Inflation YoY",
+      "duplicate_count": 30
+    },
+    {
+      "Country": "Senegal",
+      "Indicator": "Exports",
+      "duplicate_count": 6
+    },
+    {
+      "Country": "Nigeria",
+      "Indicator": "Food Inflation",
+      "duplicate_count": 4
+    },
+    {
+      "Country": "Egypt",
+      "Indicator": "Unemployment Rate",
+      "duplicate_count": 4
+    },
+    {
+      "Country": "Botswana",
+      "Indicator": "Real GDP",
+      "duplicate_count": 2
+    },
+    {
+      "Country": "Ivory Coast",
+      "Indicator": "Consumer Price Index (CPI)",
+      "duplicate_count": 2
+    }
+  ],
+  "notes": [
+    "Amount_standardised expresses currency values in billions of local currency.",
+    "Amount_fraction provides decimal form for percentage indicators.",
+    "Rows flagged as duplicates share the same country, indicator, frequency, and aligned timestamp."
+  ],
+  "duplicate_groups_auto_resolved": 7,
+  "duplicate_groups_manual_review": 114,
+  "validation_issue_count": 31
+}

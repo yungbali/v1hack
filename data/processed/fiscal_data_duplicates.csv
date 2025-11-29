@@ -1,0 +1,511 @@
+Country,Indicator,Source,Unit,Currency,Frequency,Country Code,Time,Amount,Amount_numeric,Month,Quarter,Time_aligned,Year,Unit_key,Unit_category,Unit_multiplier,Amount_standardised,Amount_fraction,is_duplicate
+Botswana,Real GDP,statistics Botswana,Million,BWP,Quarterly,BWA,2024-10-01,49494.9,49494.9,10.0,4.0,2024-12-31,2024.0,million,currency_billions,0.001,49.4949,,True
+Botswana,Real GDP,statistics Botswana,Million,BWP,Quarterly,BWA,2024-10-01,198247.9,198247.9,10.0,4.0,2024-12-31,2024.0,million,currency_billions,0.001,198.2479,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,-56213,-56213.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,-56.213,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,-29076,-29076.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,-29.076,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,-67563,-67563.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,-67.563,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,-50425,-50425.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,-50.425000000000004,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,-72379,-72379.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,-72.379,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,-59290,-59290.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,-59.29,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,-98886,-98886.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,-98.886,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,-92356,-92356.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,-92.35600000000001,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,-134138,-134138.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,-134.138,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,-97209,-97209.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,-97.209,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,-165689,-165689.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,-165.689,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,-116067,-116067.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,-116.06700000000001,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,-246853,-246853.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,-246.853,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,-181193,-181193.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,-181.193,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,-254715,-254715.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,-254.715,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,-150366,-150366.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,-150.366,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,-284314,-284314.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,-284.314,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,-232734,-232734.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,-232.734,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,-366401,-366401.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,-366.401,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,-277504,-277504.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,-277.504,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,-425385,-425385.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,-425.385,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,-285441,-285441.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,-285.44100000000003,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,-423019,-423019.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,-423.019,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,-304022,-304022.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,-304.022,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,-408509,-408509.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,-408.509,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,-287190,-287190.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,-287.19,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,-459449,-459449.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,-459.449,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,-334758,-334758.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,-334.758,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,-477486,-477486.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,-477.486,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,-364904,-364904.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,-364.904,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,-580182,-580182.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,-580.182,,True
+Egypt,Budget Deficit/Surplus,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,-514844,-514844.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,-514.844,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,17718,17718.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,17.718,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,12909,12909.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,12.909,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,19849,19849.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,19.849,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,13992,13992.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,13.992,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,22267,22267.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,22.267,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,16514,16514.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,16.514,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,23453,23453.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,23.453,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,17621,17621.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,17.621,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,26484,26484.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,26.484,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,19500,19500.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,19.5,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,26018,26018.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,26.018,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,18920,18920.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,18.92,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,28739,28739.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,28.739,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,21079,21079.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,21.079,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,31844,31844.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,31.844,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,21537,21537.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,21.537,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,41477,41477.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,41.477000000000004,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,28841,28841.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,28.841,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,48934,48934.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,48.934,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,36557,36557.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,36.557,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,55002,55002.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,55.002,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,42370,42370.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,42.37,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,61582,61582.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,61.582,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,48992,48992.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,48.992000000000004,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,66868,66868.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,66.868,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,51163,51163.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,51.163000000000004,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,79426,79426.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,79.426,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,58797,58797.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,58.797000000000004,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,89708,89708.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,89.708,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,65548,65548.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,65.548,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,100966,100966.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,100.96600000000001,,True
+Egypt,Defence Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,74339,74339.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,74.339,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,244018,244018.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,244.018,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,143290,143290.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,143.29,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,305795,305795.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,305.795,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,197275,197275.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,197.275,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,356944,356944.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,356.944,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,247044,247044.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,247.044,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,396768,396768.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,396.76800000000003,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,261088,261088.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,261.088,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,440410,440410.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,440.41,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,267555,267555.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,267.555,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,516422,516422.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,516.422,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,349053,349053.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,349.053,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,644080,644080.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,644.08,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,423691,423691.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,423.69100000000003,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,759847,759847.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,759.847,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,466919,466919.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,466.919,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,805929,805929.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,805.929,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,548515,548515.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,548.515,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,1116985,1116985.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,1116.9850000000001,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,696606,696606.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,696.606,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,1335980,1335980.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,1335.98,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,855401,855401.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,855.4010000000001,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,1505187,1505187.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,1505.1870000000001,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,995542,995542.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,995.542,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,1580934,1580934.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,1580.934,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,1063969,1063969.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,1063.969,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,1729464,1729464.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,1729.464,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,1202904,1202904.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,1202.904,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,1937165,1937165.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,1937.165,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,1266096,1266096.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,1266.096,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,2309495,2309495.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,2309.495,,True
+Egypt,Expenditure,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,1559307,1559307.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,1559.307,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,205654,205654.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,205.654,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,122842,122842.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,122.842,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,248835,248835.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,248.835,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,151684,151684.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,151.684,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,288545,288545.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,288.545,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,192768,192768.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,192.768,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,303361,303361.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,303.361,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,175181,175181.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,175.181,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,302010,302010.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,302.01,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,168125,168125.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,168.125,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,348865,348865.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,348.865,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,230093,230093.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,230.09300000000002,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,403637,403637.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,403.637,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,244633,244633.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,244.633,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,519449,519449.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,519.449,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,323578,323578.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,323.57800000000003,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,538378,538378.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,538.378,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,328105,328105.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,328.105,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,755110,755110.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,755.11,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,420839,420839.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,420.839,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,915974,915974.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,915.974,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,567975,567975.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,567.975,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,1080152,1080152.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,1080.152,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,684712,684712.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,684.712,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,1121422,1121422.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,1121.422,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,728068,728068.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,728.068,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,1266027,1266027.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,1266.027,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,865338,865338.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,865.338,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,1483977,1483977.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,1483.977,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,910176,910176.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,910.176,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,1723717,1723717.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,1723.717,,True
+Egypt,Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,1047279,1047279.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,1047.279,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,114326,114326.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,114.32600000000001,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2007-01-01,64285,64285.0,1.0,1.0,2007-03-31,2007.0,million,currency_billions,0.001,64.285,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,137195,137195.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,137.195,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2008-01-01,87676,87676.0,1.0,1.0,2008-03-31,2008.0,million,currency_billions,0.001,87.676,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,163222,163222.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,163.222,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2009-01-01,109082,109082.0,1.0,1.0,2009-03-31,2009.0,million,currency_billions,0.001,109.08200000000001,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,170494,170494.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,170.494,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2010-01-01,105904,105904.0,1.0,1.0,2010-03-31,2010.0,million,currency_billions,0.001,105.904,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,192072,192072.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,192.072,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2011-01-01,109369,109369.0,1.0,1.0,2011-03-31,2011.0,million,currency_billions,0.001,109.369,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,207410,207410.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,207.41,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2012-01-01,132290,132290.0,1.0,1.0,2012-03-31,2012.0,million,currency_billions,0.001,132.29,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,251118,251118.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,251.118,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2013-01-01,156014,156014.0,1.0,1.0,2013-03-31,2013.0,million,currency_billions,0.001,156.014,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,260289,260289.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,260.289,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2014-01-01,168959,168959.0,1.0,1.0,2014-03-31,2014.0,million,currency_billions,0.001,168.959,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,305957,305957.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,305.957,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2015-01-01,204903,204903.0,1.0,1.0,2015-03-31,2015.0,million,currency_billions,0.001,204.903,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2016-01-01,352315,352315.0,1.0,1.0,2016-03-31,2016.0,million,currency_billions,0.001,352.315,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2016-01-01,212439,212439.0,1.0,1.0,2016-03-31,2016.0,million,currency_billions,0.001,212.439,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,462007,462007.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,462.007,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2017-01-01,268956,268956.0,1.0,1.0,2017-03-31,2017.0,million,currency_billions,0.001,268.956,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,628083,628083.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,628.083,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2018-01-01,403216,403216.0,1.0,1.0,2018-03-31,2018.0,million,currency_billions,0.001,403.216,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,736121,736121.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,736.121,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2019-01-01,468410,468410.0,1.0,1.0,2019-03-31,2019.0,million,currency_billions,0.001,468.41,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,739633,739633.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,739.633,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2020-01-01,474553,474553.0,1.0,1.0,2020-03-31,2020.0,million,currency_billions,0.001,474.553,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,833993,833993.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,833.993,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2021-01-01,538599,538599.0,1.0,1.0,2021-03-31,2021.0,million,currency_billions,0.001,538.599,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,990138,990138.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,990.138,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2022-01-01,607678,607678.0,1.0,1.0,2022-03-31,2022.0,million,currency_billions,0.001,607.678,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,1258582,1258582.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,1258.582,,True
+Egypt,Tax Revenue,Central Bank of Egypt,Million,EGP,Quarterly,EGY,2023-01-01,740722,740722.0,1.0,1.0,2023-03-31,2023.0,million,currency_billions,0.001,740.722,,True
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Quarterly,EGY,2023-01-01,7,7.0,1.0,1.0,2023-03-31,2023.0,%,percentage,1.0,7.0,0.07,True
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Quarterly,EGY,2023-01-01,7.1,7.1,1.0,1.0,2023-03-31,2023.0,%,percentage,1.0,7.1,0.071,True
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Quarterly,EGY,2024-01-01,6.6,6.6,1.0,1.0,2024-03-31,2024.0,%,percentage,1.0,6.6,0.066,True
+Egypt,Unemployment Rate,Central Agency for Public Mobilization and Statistics,%,,Quarterly,EGY,2024-01-01,6.7,6.7,1.0,1.0,2024-03-31,2024.0,%,percentage,1.0,6.7,0.067,True
+Ivory Coast,Consumer Price Index (CPI),Central Bank of West African States,Points,,Monthly,CIV,2025-01-01,99.2,99.2,1.0,1.0,2025-01-31,2025.0,points,index_points,1.0,99.2,,True
+Ivory Coast,Consumer Price Index (CPI),Central Bank of West African States,Points,,Monthly,CIV,2025-01-01,102.7,102.7,1.0,1.0,2025-01-31,2025.0,points,index_points,1.0,102.7,,True
+Nigeria,Food Inflation,National Bureau of Statistics,%,,Monthly,NGA,,21.14,21.14,,,,,%,percentage,1.0,21.14,0.2114,True
+Nigeria,Food Inflation,National Bureau of Statistics,%,,Monthly,NGA,,21.97,21.97,,,,,%,percentage,1.0,21.97,0.21969999999999998,True
+Nigeria,Food Inflation,National Bureau of Statistics,%,,Monthly,NGA,,22.74,22.74,,,,,%,percentage,1.0,22.74,0.2274,True
+Nigeria,Food Inflation,National Bureau of Statistics,%,,Monthly,NGA,,21.87,21.87,,,,,%,percentage,1.0,21.87,0.2187,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-01,61.3,61.3,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,61.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-02,61.1,61.1,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,61.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-03,61.4,61.4,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,61.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-04,61.4,61.4,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,61.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-05,61.1,61.1,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,61.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-06,60.4,60.4,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,60.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-07,61.3,61.3,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,61.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-08,61.5,61.5,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,61.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-09,62.9,62.9,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,62.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-10,62.8,62.8,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,62.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-11,62.1,62.1,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,62.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2000-01-12,62.2,62.2,1.0,1.0,2000-01-31,2000.0,points,index_points,1.0,62.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-01,62.4,62.4,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,62.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-02,62.3,62.3,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,62.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-03,62.2,62.2,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,62.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-04,62.1,62.1,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,62.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-05,61.9,61.9,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,61.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-06,62.8,62.8,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,62.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-07,63.6,63.6,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,63.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-08,64.6,64.6,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,64.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-09,64.7,64.7,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,64.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-10,65.5,65.5,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,65.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-11,64.8,64.8,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,64.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2001-01-12,64.6,64.6,1.0,1.0,2001-01-31,2001.0,points,index_points,1.0,64.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-01,64.1,64.1,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,64.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-02,64.6,64.6,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,64.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-03,64.7,64.7,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,64.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-04,64.7,64.7,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,64.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-05,64.6,64.6,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,64.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-06,64.1,64.1,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,64.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-07,64.7,64.7,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,64.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-08,65.4,65.4,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,65.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-09,66,66.0,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,66.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-10,65.3,65.3,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,65.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-11,65.5,65.5,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,65.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2002-01-12,65.6,65.6,1.0,1.0,2002-01-31,2002.0,points,index_points,1.0,65.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-01,65.2,65.2,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,65.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-02,65,65.0,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,65.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-03,64.8,64.8,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,64.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-04,64.7,64.7,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,64.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-05,64,64.0,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,64.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-06,63.9,63.9,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,63.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-07,64.6,64.6,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,64.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-08,65.2,65.2,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,65.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-09,66.1,66.1,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,66.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-10,65.9,65.9,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,65.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-11,65.2,65.2,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,65.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2003-01-12,64.6,64.6,1.0,1.0,2003-01-31,2003.0,points,index_points,1.0,64.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-01,64.7,64.7,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,64.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-02,64.9,64.9,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,64.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-03,64.9,64.9,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,64.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-04,64.5,64.5,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,64.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-05,64,64.0,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,64.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-06,64.4,64.4,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,64.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-07,65.4,65.4,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,65.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-08,66,66.0,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,66.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-09,66,66.0,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,66.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-10,66.3,66.3,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,66.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-11,65.7,65.7,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,65.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2004-01-12,65.7,65.7,1.0,1.0,2004-01-31,2004.0,points,index_points,1.0,65.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-01,65.3,65.3,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,65.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-02,65.3,65.3,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,65.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-03,65.1,65.1,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,65.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-04,64.9,64.9,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,64.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-05,65,65.0,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,65.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-06,64.4,64.4,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,64.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-07,66.6,66.6,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,66.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-08,67.4,67.4,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,67.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-09,68.1,68.1,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,68.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-10,69.2,69.2,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,69.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-11,67.3,67.3,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,67.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2005-01-12,66.6,66.6,1.0,1.0,2005-01-31,2005.0,points,index_points,1.0,66.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-01,66.5,66.5,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,66.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-02,66.7,66.7,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,66.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-03,67.1,67.1,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,67.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-04,66.9,66.9,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,66.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-05,66.3,66.3,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,66.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-06,66.6,66.6,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,66.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-07,66.6,66.6,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,66.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-08,68.3,68.3,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,68.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-09,69,69.0,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,69.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-10,69.7,69.7,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,69.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-11,69.4,69.4,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,69.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2006-01-12,69.2,69.2,1.0,1.0,2006-01-31,2006.0,points,index_points,1.0,69.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-01,69.4,69.4,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,69.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-02,70.1,70.1,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,70.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-03,71.1,71.1,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,71.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-04,70.8,70.8,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,70.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-05,70.1,70.1,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,70.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-06,70.6,70.6,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,70.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-07,72,72.0,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,72.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-08,68.3,68.3,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,68.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-09,73.1,73.1,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,73.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-10,73.6,73.6,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,73.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-11,74.1,74.1,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,74.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2007-01-12,73.5,73.5,1.0,1.0,2007-01-31,2007.0,points,index_points,1.0,73.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-01,73.6,73.6,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,73.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-02,74,74.0,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,74.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-03,74.2,74.2,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,74.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-04,74.5,74.5,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,74.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-05,74.4,74.4,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,74.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-06,74.7,74.7,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,74.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-07,75.5,75.5,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,75.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-08,77.5,77.5,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,77.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-09,78.9,78.9,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,78.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-10,79.1,79.1,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,79.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-11,77.2,77.2,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,77.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2008-01-12,76.6,76.6,1.0,1.0,2008-01-31,2008.0,points,index_points,1.0,76.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-01,75.3,75.3,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,75.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-02,75.4,75.4,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,75.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-03,75.3,75.3,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,75.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-04,74.8,74.8,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,74.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-05,74.1,74.1,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,74.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-06,73.8,73.8,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,73.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-07,74.1,74.1,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,74.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-08,75.2,75.2,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,75.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-09,75.6,75.6,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,75.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-10,76.4,76.4,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,76.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-11,75.9,75.9,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,75.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2009-01-12,75,75.0,1.0,1.0,2009-01-31,2009.0,points,index_points,1.0,75.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-01,74.2,74.2,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,74.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-02,74.2,74.2,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,74.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-03,74.1,74.1,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,74.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-04,73.4,73.4,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,73.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-05,73.1,73.1,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,73.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-06,73.9,73.9,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,73.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-07,75,75.0,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,75.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-08,75.9,75.9,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,75.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-09,76.6,76.6,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,76.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-10,76.9,76.9,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,76.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-11,76.7,76.7,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,76.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2010-01-12,176.8,176.8,1.0,1.0,2010-01-31,2010.0,points,index_points,1.0,176.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-01,77.2,77.2,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,77.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-02,76.9,76.9,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,76.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-03,76.5,76.5,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,76.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-04,76.5,76.5,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,76.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-05,76.8,76.8,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,76.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-06,77,77.0,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,77.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-07,77.4,77.4,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,77.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-08,77.9,77.9,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,77.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-09,78.6,78.6,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,78.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-10,79,79.0,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,79.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-11,78.8,78.8,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,78.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2011-01-12,78.9,78.9,1.0,1.0,2011-01-31,2011.0,points,index_points,1.0,78.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-01,78.4,78.4,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,78.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-02,78.6,78.6,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,78.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-03,78.6,78.6,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,78.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-04,78.1,78.1,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,78.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-05,77.2,77.2,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,77.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-06,77.2,77.2,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,77.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-07,77.6,77.6,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,77.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-08,78.8,78.8,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,78.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-09,79.6,79.6,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,79.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-10,80.5,80.5,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,80.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-11,80.3,80.3,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,80.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2012-01-12,79.8,79.8,1.0,1.0,2012-01-31,2012.0,points,index_points,1.0,79.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-01,78.9,78.9,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,78.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-02,78.8,78.8,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,78.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-03,78.4,78.4,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,78.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-04,78.4,78.4,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,78.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-05,78.2,78.2,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,78.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-06,77.7,77.7,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,77.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-07,78.5,78.5,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,78.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-08,79.7,79.7,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,79.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-09,80.4,80.4,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,80.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-10,81.5,81.5,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,81.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-11,81,81.0,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,81.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2013-01-12,79.8,79.8,1.0,1.0,2013-01-31,2013.0,points,index_points,1.0,79.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-01,79.5,79.5,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,79.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-02,78.4,78.4,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,78.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-03,78.1,78.1,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,78.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-04,77.5,77.5,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,77.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-05,76.8,76.8,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,76.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-06,76.9,76.9,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,76.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-07,77.4,77.4,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,77.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-08,78.8,78.8,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,78.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-09,79.3,79.3,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,79.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-10,79.9,79.9,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,79.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-11,79.2,79.2,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,79.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2014-01-12,79.1,79.1,1.0,1.0,2014-01-31,2014.0,points,index_points,1.0,79.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-01,77.6,77.6,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,77.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-02,77.5,77.5,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,77.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-03,77,77.0,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,77.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-04,77,77.0,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,77.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-05,77.3,77.3,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,77.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-06,77.4,77.4,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,77.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-07,78.3,78.3,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,78.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-08,78.8,78.8,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,78.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-09,79.9,79.9,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,79.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-10,81.5,81.5,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,81.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-11,80.4,80.4,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,80.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2015-01-12,79.4,79.4,1.0,1.0,2015-01-31,2015.0,points,index_points,1.0,79.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-01,78.8,78.8,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,78.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-02,78.5,78.5,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,78.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-03,78,78.0,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,78.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-04,77.6,77.6,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,77.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-05,77.3,77.3,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,77.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-06,77.8,77.8,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,77.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-07,78.5,78.5,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,78.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-08,79.8,79.8,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,79.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-09,80.9,80.9,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,80.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-10,81.2,81.2,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,81.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-11,80.5,80.5,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,80.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2016-01-12,81.1,81.1,1.0,1.0,2016-01-31,2016.0,points,index_points,1.0,81.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-01,79.6,79.6,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,79.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-02,79.4,79.4,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,79.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-03,79.7,79.7,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,79.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-04,79.1,79.1,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,79.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-05,79.7,79.7,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,79.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-06,80.8,80.8,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,80.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-07,82,82.0,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,82.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-08,82.5,82.5,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,82.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-09,82.5,82.5,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,82.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-10,82.7,82.7,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,82.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-11,81.9,81.9,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,81.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2017-01-12,81.5,81.5,1.0,1.0,2017-01-31,2017.0,points,index_points,1.0,81.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-01,80.9,80.9,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,80.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-02,81,81.0,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,81.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-03,80.3,80.3,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,80.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-04,80.4,80.4,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,80.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-05,79.9,79.9,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,79.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-06,79.8,79.8,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,79.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-07,80.7,80.7,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,80.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-08,82.1,82.1,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,82.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-09,83,83.0,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,83.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-10,82.8,82.8,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,82.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-11,82.5,82.5,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,82.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2018-01-12,82.4,82.4,1.0,1.0,2018-01-31,2018.0,points,index_points,1.0,82.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-01,81.4,81.4,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,81.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-02,81.2,81.2,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,81.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-03,80.9,80.9,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,80.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-04,81,81.0,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,81.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-05,81.1,81.1,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,81.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-06,81.4,81.4,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,81.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-07,81.6,81.6,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,81.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-08,83.2,83.2,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,83.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-09,83.5,83.5,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,83.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-10,83.8,83.8,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,83.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-11,83.6,83.6,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,83.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2019-01-12,82.9,82.9,1.0,1.0,2019-01-31,2019.0,points,index_points,1.0,82.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-01,83.1,83.1,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,83.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-02,82.8,82.8,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,82.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-03,82.9,82.9,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,82.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-04,83.7,83.7,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,83.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-05,83.2,83.2,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,83.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-06,83,83.0,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,83.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-07,83.8,83.8,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,83.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-08,85.6,85.6,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,85.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-09,85.9,85.9,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,85.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-10,86,86.0,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,86.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-11,85.6,85.6,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,85.6,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2020-01-12,85,85.0,1.0,1.0,2020-01-31,2020.0,points,index_points,1.0,85.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-01,83.8,83.8,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,83.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-02,84.2,84.2,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,84.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-03,83.8,83.8,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,83.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-04,84,84.0,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,84.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-05,84.3,84.3,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,84.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-06,84.7,84.7,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,84.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-07,86.3,86.3,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,86.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-08,87.9,87.9,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,87.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-09,88.5,88.5,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,88.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-10,88.8,88.8,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,88.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-11,88.1,88.1,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,88.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2021-01-12,88.2,88.2,1.0,1.0,2021-01-31,2021.0,points,index_points,1.0,88.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-01,88.4,88.4,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,88.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-02,89.7,89.7,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,89.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-03,89,89.0,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,89.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-04,89.9,89.9,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,89.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-05,90.5,90.5,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,90.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-06,92.2,92.2,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,92.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-07,95.8,95.8,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,95.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-08,97.9,97.9,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,97.9,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-09,99,99.0,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,99.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-10,100.3,100.3,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,100.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-11,100.5,100.5,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,100.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2022-01-12,99.5,99.5,1.0,1.0,2022-01-31,2022.0,points,index_points,1.0,99.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-01,97.8,97.8,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,97.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-02,98.2,98.2,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,98.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-03,97.5,97.5,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,97.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-04,98,98.0,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,98.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-05,98,98.0,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,98.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-06,99.1,99.1,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,99.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-07,101.2,101.2,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,101.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-08,103,103.0,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,103.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-09,102.7,102.7,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,102.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-10,102.7,102.7,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,102.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-11,101.5,101.5,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,101.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2023-01-12,100.3,100.3,1.0,1.0,2023-01-31,2023.0,points,index_points,1.0,100.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-01,99.8,99.8,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,99.8,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-02,100.4,100.4,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,100.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-03,100.7,100.7,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,100.7,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-04,100.2,100.2,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,100.2,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-05,100.1,100.1,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,100.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-06,100.4,100.4,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,100.4,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-07,100.5,100.5,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,100.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-08,101.1,101.1,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,101.1,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-09,102,102.0,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,102.0,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-10,102.5,102.5,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,102.5,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-11,101.3,101.3,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,101.3,,True
+Senegal,Consumer Price Index (CPI),Senegal Opendata for Africa,points,XOF,Monthly,SEN,2024-01-12,100.5,100.5,1.0,1.0,2024-01-31,2024.0,points,index_points,1.0,100.5,,True
+Senegal,Exports,Senegal Opendata for Africa,Billions,XOF,Yearly,SEN,2025-01-01,315.2,315.2,1.0,1.0,2025-12-31,2025.0,billions,currency_billions,1.0,315.2,,True
+Senegal,Exports,Senegal Opendata for Africa,Billions,XOF,Yearly,SEN,2025-01-02,320.8,320.8,1.0,1.0,2025-12-31,2025.0,billions,currency_billions,1.0,320.8,,True
+Senegal,Exports,Senegal Opendata for Africa,Billions,XOF,Yearly,SEN,2025-01-03,325.4,325.4,1.0,1.0,2025-12-31,2025.0,billions,currency_billions,1.0,325.4,,True
+Senegal,Exports,Senegal Opendata for Africa,Billions,XOF,Yearly,SEN,2025-01-04,330.1,330.1,1.0,1.0,2025-12-31,2025.0,billions,currency_billions,1.0,330.1,,True
+Senegal,Exports,Senegal Opendata for Africa,Billions,XOF,Yearly,SEN,2025-01-05,335.7,335.7,1.0,1.0,2025-12-31,2025.0,billions,currency_billions,1.0,335.7,,True
+Senegal,Exports,Senegal Opendata for Africa,Billions,XOF,Yearly,SEN,2025-01-06,340.3,340.3,1.0,1.0,2025-12-31,2025.0,billions,currency_billions,1.0,340.3,,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-01,8.5,8.5,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,8.5,0.085,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-02,8.2,8.2,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,8.2,0.08199999999999999,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-03,7.9,7.9,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,7.9,0.079,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-04,7.6,7.6,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,7.6,0.076,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-05,7.3,7.3,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,7.3,0.073,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-06,7,7.0,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,7.0,0.07,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-07,6.7,6.7,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,6.7,0.067,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-08,6.6,6.6,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,6.6,0.066,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-09,6.4,6.4,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,6.4,0.064,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-10,6.2,6.2,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,6.2,0.062,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-11,6,6.0,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,6.0,0.06,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2023-01-12,5.8,5.8,1.0,1.0,2023-01-31,2023.0,%,percentage,1.0,5.8,0.057999999999999996,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-01,5.5,5.5,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,5.5,0.055,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-02,5.2,5.2,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,5.2,0.052000000000000005,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-03,4.9,4.9,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,4.9,0.049,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-04,4.6,4.6,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,4.6,0.046,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-05,4.3,4.3,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,4.3,0.043,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-06,4,4.0,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,4.0,0.04,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-07,-2,-2.0,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,-2.0,-0.02,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-08,-1.8,-1.8,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,-1.8,-0.018000000000000002,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-09,-1.5,-1.5,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,-1.5,-0.015,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-10,-1.2,-1.2,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,-1.2,-0.012,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-11,-0.8,-0.8,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,-0.8,-0.008,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2024-01-12,-0.5,-0.5,1.0,1.0,2024-01-31,2024.0,%,percentage,1.0,-0.5,-0.005,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2025-01-01,-0.4,-0.4,1.0,1.0,2025-01-31,2025.0,%,percentage,1.0,-0.4,-0.004,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2025-01-02,-0.3,-0.3,1.0,1.0,2025-01-31,2025.0,%,percentage,1.0,-0.3,-0.003,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2025-01-03,-0.3,-0.3,1.0,1.0,2025-01-31,2025.0,%,percentage,1.0,-0.3,-0.003,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2025-01-04,-0.2,-0.2,1.0,1.0,2025-01-31,2025.0,%,percentage,1.0,-0.2,-0.002,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2025-01-05,-0.3,-0.3,1.0,1.0,2025-01-31,2025.0,%,percentage,1.0,-0.3,-0.003,True
+Senegal,Food Inflation YoY,Senegal Opendata for Africa,%,XOF,Monthly,SEN,2025-01-06,-0.2,-0.2,1.0,1.0,2025-01-31,2025.0,%,percentage,1.0,-0.2,-0.002,True
