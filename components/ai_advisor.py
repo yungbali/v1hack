@@ -9,10 +9,11 @@ import streamlit as st
 import pandas as pd
 import time
 import random
-import google.generativeai as genai
+from google import genai
 from typing import Dict, Any, List
 import feedparser
 from datetime import datetime
+import json
 
 # --- UTILS ---
 
@@ -61,8 +62,7 @@ def _get_live_news_sentiment(api_key: str) -> Dict[str, Any]:
 
     # Use Gemini to analyze sentiment of these headlines
     try:
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        client = genai.Client(api_key=api_key)
 
         prompt = f"""
         Analyze the economic sentiment of the following headlines for an African fiscal policy context.
@@ -77,10 +77,11 @@ def _get_live_news_sentiment(api_key: str) -> Dict[str, Any]:
         }}
         """
 
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(model="gemini-2.0-flash",
+                                                  contents=prompt)
+
         # Cleanup json string if markdown blocks are present
         text = response.text.replace('```json', '').replace('```', '').strip()
-        import json
         sentiment_data = json.loads(text)
 
         return {
@@ -102,8 +103,7 @@ def _get_live_news_sentiment(api_key: str) -> Dict[str, Any]:
             "headlines": headlines,
             "score": 0.0,
             "label": "Neutral",
-            "summary":
-            "Unable to analyze real-time sentiment due to connection issues.",
+            "summary": f"Unable to analyze real-time sentiment: {str(e)}",
             "source": "Fallback Mode"
         }
 
@@ -251,8 +251,7 @@ def render_ai_advisor_interface(df: pd.DataFrame, api_key: str):
 
             # 3. Call Gemini
             try:
-                genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                client = genai.Client(api_key=api_key)
 
                 full_prompt = _construct_prompt(selected_country,
                                                 prompt_metrics, sentiment)
@@ -264,7 +263,9 @@ def render_ai_advisor_interface(df: pd.DataFrame, api_key: str):
                     full_response = ""
 
                     # Generate content (Gemini streaming)
-                    response = model.generate_content(full_prompt, stream=True)
+                    # Note: google-genai SDK streaming support uses generate_content_stream
+                    response = client.models.generate_content_stream(
+                        model="gemini-2.0-flash", contents=full_prompt)
 
                     for chunk in response:
                         if chunk.text:

@@ -18,8 +18,20 @@ def load_resolution_log():
     """Loads the resolution log or creates an empty one."""
     path = "data/processed/fiscal_duplicate_resolution_log.csv"
     if os.path.exists(path):
-        return pd.read_csv(path)
-    return pd.DataFrame(columns=["country", "indicator", "year", "action", "kept_value", "timestamp", "user_comment"])
+        df = pd.read_csv(path)
+        # Standardize column casing/spacing for downstream references
+        df.columns = [c.strip().lower() for c in df.columns]
+        return df
+    return pd.DataFrame(
+        columns=[
+            "country",
+            "indicator",
+            "year",
+            "action",
+            "kept_value",
+            "timestamp",
+            "user_comment",
+        ])
 
 def save_resolution(resolution_data):
     """Appends a resolution to the log file."""
@@ -62,11 +74,18 @@ def render_manual_review_interface():
     
     # Filter out clusters that have been resolved
     if not log_df.empty:
-        # Create matching keys in log_df
-        # Note: We need to ensure column names match or map them correctly
-        log_df['cluster_id'] = log_df['country'] + "|" + log_df['indicator'] + "|" + log_df['year'].astype(str)
-        resolved_ids = set(log_df['cluster_id'].unique())
-        df = df[~df['cluster_id'].isin(resolved_ids)]
+        required_cols = {"country", "indicator", "year"}
+        if required_cols.issubset(set(log_df.columns)):
+            log_df["cluster_id"] = (
+                log_df["country"] + "|" + log_df["indicator"] + "|" +
+                log_df["year"].astype(str))
+            resolved_ids = set(log_df["cluster_id"].unique())
+            df = df[~df["cluster_id"].isin(resolved_ids)]
+        else:
+            missing = ", ".join(required_cols - set(log_df.columns))
+            st.warning(
+                f"Resolution log is missing expected columns ({missing}). Skipping auto-filter until the log is fixed."
+            )
 
     if df.empty:
         st.success("✅ All flagged items have been resolved!")
