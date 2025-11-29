@@ -1,8 +1,0 @@
-Country,Indicator,Frequency,Time_aligned,kept_row_id,kept_time,kept_amount,dropped_row_ids,dropped_count,spread,relative_spread,resolution
-Egypt,Budget Deficit/Surplus,Quarterly,2016-03-31,55,2016-01-01,-244653.0,[9],1,0.0,0.0,auto_low_spread
-Senegal,Consumer Price Index (CPI),Monthly,2025-01-31,4929,2025-01-02,101.0,[4928],1,0.5999999999999943,0.005923000987166775,auto_low_spread
-Egypt,Defence Expenditure,Quarterly,2016-03-31,4985,2016-01-01,30854.0,[4939],1,0.0,0.0,auto_low_spread
-Egypt,Expenditure,Quarterly,2016-03-31,5144,2016-01-01,586805.0,[5098],1,0.0,0.0,auto_low_spread
-Egypt,Revenue,Quarterly,2016-03-31,20731,2016-01-01,331741.0,[20685],1,0.0,0.0,auto_low_spread
-Egypt,Unemployment Rate,Quarterly,2021-03-31,23208,2021-01-01,7.4,[23204],1,0.0,0.0,auto_low_spread
-Egypt,Unemployment Rate,Quarterly,2022-03-31,23212,2022-01-01,7.2,[23205],1,0.0,0.0,auto_low_spread
