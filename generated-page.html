@@ -1,0 +1,960 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Africa Sovereign Debt Crisis Dashboard — Design Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F9FAFB] text-slate-900">
+    <!-- Page Shell -->
+    <div class="min-h-screen flex">
+      <!-- Sidebar -->
+      <aside class="hidden lg:flex lg:flex-col lg:w-64 xl:w-72 border-r border-slate-200 bg-white">
+        <div class="flex items-center justify-between px-5 pt-5 pb-4 border-b border-slate-100">
+          <div class="flex items-center gap-2">
+            <div class="h-8 w-8 rounded-md bg-slate-900 flex items-center justify-center">
+              <span class="text-xs font-semibold tracking-tight text-white">AD</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-sm font-semibold tracking-tight text-slate-900">
+                Africa Debt
+              </span>
+              <span class="text-xs text-slate-500">
+                Crisis Dashboard
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Nav -->
+        <nav class="flex-1 overflow-y-auto px-3 py-4 space-y-6">
+          <div>
+            <div class="px-2 mb-2">
+              <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500">
+                Main views
+              </p>
+            </div>
+            <ul class="space-y-1.5">
+              <li>
+                <button class="w-full flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium tracking-tight bg-slate-900 text-white">
+                  <i data-lucide="globe-2" class="h-4 w-4 stroke-[1.5]"></i>
+                  <span>Overview</span>
+                </button>
+              </li>
+              <li>
+                <button class="w-full flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium tracking-tight text-slate-700 hover:bg-slate-50">
+                  <i data-lucide="activity" class="h-4 w-4 stroke-[1.5]"></i>
+                  <span>Debt Service</span>
+                </button>
+              </li>
+              <li>
+                <button class="w-full flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium tracking-tight text-slate-700 hover:bg-slate-50">
+                  <i data-lucide="layers" class="h-4 w-4 stroke-[1.5]"></i>
+                  <span>Creditor Mix</span>
+                </button>
+              </li>
+              <li>
+                <button class="w-full flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium tracking-tight text-slate-700 hover:bg-slate-50">
+                  <i data-lucide="heart-pulse" class="h-4 w-4 stroke-[1.5]"></i>
+                  <span>Social Spending</span>
+                </button>
+              </li>
+              <li>
+                <button class="w-full flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium tracking-tight text-slate-700 hover:bg-slate-50">
+                  <i data-lucide="file-search" class="h-4 w-4 stroke-[1.5]"></i>
+                  <span>Country Deep Dive</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legend / Risk Palette -->
+          <div class="px-2">
+            <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-3">
+              Risk bands
+            </p>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between text-xs text-slate-600">
+                <div class="flex items-center gap-2">
+                  <span class="h-2.5 w-2.5 rounded-full bg-[#E74C3C]"></span>
+                  <span>High risk</span>
+                </div>
+                <span class="text-[0.7rem] text-slate-500">
+                  &gt; 60% GDP
+                </span>
+              </div>
+              <div class="flex items-center justify-between text-xs text-slate-600">
+                <div class="flex items-center gap-2">
+                  <span class="h-2.5 w-2.5 rounded-full bg-[#F39C12]"></span>
+                  <span>Moderate</span>
+                </div>
+                <span class="text-[0.7rem] text-slate-500">
+                  40–60% GDP
+                </span>
+              </div>
+              <div class="flex items-center justify-between text-xs text-slate-600">
+                <div class="flex items-center gap-2">
+                  <span class="h-2.5 w-2.5 rounded-full bg-[#2ECC71]"></span>
+                  <span>Low risk</span>
+                </div>
+                <span class="text-[0.7rem] text-slate-500">
+                  &lt; 40% GDP
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Quick Guide -->
+        <div class="border-t border-slate-100 px-4 py-4 bg-slate-50/80">
+          <div class="flex items-start gap-3">
+            <div class="mt-0.5 h-7 w-7 rounded-full bg-slate-900/5 flex items-center justify-center">
+              <i data-lucide="info" class="h-3.5 w-3.5 stroke-[1.5] text-slate-600"></i>
+            </div>
+            <div class="flex-1">
+              <p class="text-xs font-medium tracking-tight text-slate-900 mb-1">
+                Quick guide
+              </p>
+              <p class="text-[0.75rem] text-slate-600">
+                Hover the map for fast stats. Click a country to sync all charts and the simulator.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col min-w-0">
+        <!-- Top Bar -->
+        <header class="sticky top-0 z-20 bg-[#F9FAFB]/95 backdrop-blur border-b border-slate-200">
+          <div class="px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-3 lg:gap-6">
+            <!-- Mobile brand -->
+            <div class="flex items-center gap-2 lg:hidden">
+              <div class="h-8 w-8 rounded-md bg-slate-900 flex items-center justify-center">
+                <span class="text-xs font-semibold tracking-tight text-white">AD</span>
+              </div>
+              <span class="text-sm font-semibold tracking-tight text-slate-900">
+                Africa Debt Dashboard
+              </span>
+            </div>
+
+            <!-- Global Filters -->
+            <div class="flex-1 flex flex-wrap items-center gap-3">
+              <!-- Region Selector -->
+              <button class="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">
+                <span class="text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
+                  Region
+                </span>
+                <span class="text-sm font-medium tracking-tight text-slate-800">
+                  Sub‑Saharan Africa
+                </span>
+                <i data-lucide="chevron-down" class="h-4 w-4 stroke-[1.5] text-slate-500"></i>
+              </button>
+
+              <!-- Year Range -->
+              <button class="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">
+                <span class="text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
+                  Years
+                </span>
+                <span class="text-sm font-medium tracking-tight text-slate-800">
+                  2010–2024
+                </span>
+                <i data-lucide="chevron-down" class="h-4 w-4 stroke-[1.5] text-slate-500"></i>
+              </button>
+
+              <!-- Currency Selector -->
+              <button class="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50">
+                <span class="text-xs font-medium uppercase tracking-[0.14em] text-slate-500">
+                  Currency
+                </span>
+                <span class="text-sm font-medium tracking-tight text-slate-800">
+                  USD (constant)
+                </span>
+                <i data-lucide="chevron-down" class="h-4 w-4 stroke-[1.5] text-slate-500"></i>
+              </button>
+            </div>
+
+            <!-- Search -->
+            <div class="flex-1 max-w-xs hidden md:flex">
+              <label class="relative w-full">
+                <span class="absolute inset-y-0 left-3 flex items-center">
+                  <i data-lucide="search" class="h-4 w-4 stroke-[1.5] text-slate-400"></i>
+                </span>
+                <input type="text" placeholder="Search country (e.g. Ghana)" class="w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 py-1.5 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900/5 focus:border-slate-400">
+              </label>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-2">
+              <button class="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-slate-700 hover:bg-slate-50">
+                <i data-lucide="download" class="mr-1.5 h-3.5 w-3.5 stroke-[1.5]"></i>
+                Export PDF
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main Scroll Area -->
+        <main class="flex-1 overflow-y-auto">
+          <!-- Hero / Intro -->
+          <section class="px-4 sm:px-6 lg:px-8 pt-8 pb-6">
+            <!-- Breadcrumb style tag row -->
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-600">
+                Policy Analytics
+              </span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-600">
+                Africa Sovereign Debt
+              </span>
+            </div>
+
+            <div class="grid gap-8 lg:grid-cols-12 lg:gap-10 items-start">
+              <div class="lg:col-span-7 space-y-3">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900">
+                  Africa Sovereign Debt Crisis Dashboard
+                </h1>
+                <p class="text-base sm:text-lg text-slate-600">
+                  A data-first interface to help policymakers, researchers, and advocates understand debt risks, creditor exposure, and the social trade‑offs of austerity across African economies.
+                </p>
+              </div>
+              <div class="lg:col-span-5">
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div class="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                    <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                      Scope
+                    </p>
+                    <p class="text-sm font-medium tracking-tight text-slate-900">
+                      Pan‑African macro‑fiscal analytics
+                    </p>
+                  </div>
+                  <div class="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                    <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                      Users
+                    </p>
+                    <p class="text-sm font-medium tracking-tight text-slate-900">
+                      Ministries, IFIs, CSOs, media
+                    </p>
+                  </div>
+                  <div class="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                    <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                      Focus
+                    </p>
+                    <p class="text-sm font-medium tracking-tight text-slate-900">
+                      Risk, creditors, opportunity cost
+                    </p>
+                  </div>
+                  <div class="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                    <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                      Status
+                    </p>
+                    <p class="inline-flex items-center gap-1 text-sm font-medium tracking-tight text-emerald-700">
+                      <span class="h-1.5 w-1.5 rounded-full bg-[#2ECC71]"></span>
+                      In active design
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Hero Visualization Mock -->
+          <section class="px-4 sm:px-6 lg:px-8 pb-8">
+            <div class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+              <div class="flex items-center justify-between px-4 sm:px-5 py-3 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                  <p class="text-sm font-medium tracking-tight text-slate-900">
+                    Africa risk heatmap
+                  </p>
+                  <span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[0.7rem] font-medium tracking-[0.14em] uppercase text-slate-600">
+                    Choropleth
+                  </span>
+                </div>
+                <div class="flex items-center gap-3 text-[0.7rem] text-slate-500">
+                  <span class="inline-flex items-center gap-1">
+                    <span class="h-2 w-4 rounded-full bg-[#2ECC71]"></span>
+                    Low
+                  </span>
+                  <span class="inline-flex items-center gap-1">
+                    <span class="h-2 w-4 rounded-full bg-[#F39C12]"></span>
+                    Moderate
+                  </span>
+                  <span class="inline-flex items-center gap-1">
+                    <span class="h-2 w-4 rounded-full bg-[#E74C3C]"></span>
+                    High
+                  </span>
+                </div>
+              </div>
+              <div class="relative h-60 sm:h-72 lg:h-80 bg-slate-50 flex items-center justify-center">
+                <!-- Placeholder map grid -->
+                <div class="absolute inset-5 sm:inset-8 rounded-lg border border-dashed border-slate-200 bg-gradient-to-br from-white to-slate-50 flex items-center justify-center">
+                  <div class="grid grid-cols-6 gap-1 w-full h-full p-3">
+                    <!-- Some pseudo-countries as rectangles in risk colors -->
+                    <div class="col-span-2 row-span-2 rounded-sm bg-[#E74C3C]/80"></div>
+                    <div class="col-span-2 row-span-2 rounded-sm bg-[#F39C12]/80"></div>
+                    <div class="col-span-2 row-span-2 rounded-sm bg-[#2ECC71]/80"></div>
+                    <div class="col-span-3 row-span-2 rounded-sm bg-[#F39C12]/70"></div>
+                    <div class="col-span-3 row-span-2 rounded-sm bg-[#E74C3C]/70"></div>
+                  </div>
+                  <div class="absolute bottom-3 left-3 rounded-md bg-white/90 backdrop-blur px-3 py-2 shadow-sm border border-slate-200">
+                    <p class="text-xs font-medium tracking-tight text-slate-900">
+                      Hover: Nigeria
+                    </p>
+                    <p class="text-[0.7rem] text-slate-600">
+                      Debt‑to‑GDP: <span class="font-medium text-slate-900">69%</span> · Service / Rev: <span class="font-medium text-slate-900">34%</span>
+                    </p>
+                  </div>
+                  <div class="absolute top-3 right-3 rounded-full bg-white/90 backdrop-blur px-2 py-1 border border-slate-200 flex items-center gap-1.5 text-[0.7rem] text-slate-600">
+                    <i data-lucide="cursor-click" class="h-3.5 w-3.5 stroke-[1.5]"></i>
+                    <span>Select to sync country</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Core Metrics -->
+          <section class="px-4 sm:px-6 lg:px-8 pb-10">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900">
+                System‑level indicators
+              </h2>
+              <p class="text-sm text-slate-500">
+                Aggregates update with region and year filters.
+              </p>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              <!-- KPI card template -->
+              <div class="group rounded-xl border border-slate-200 bg-white px-4 py-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
+                <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                  Debt‑to‑GDP (median)
+                </p>
+                <div class="flex items-baseline gap-2 mb-2">
+                  <p class="text-3xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    57%
+                  </p>
+                  <span class="inline-flex items-center gap-1 text-xs font-medium text-[#F39C12]">
+                    <span class="h-1.5 w-1.5 rounded-full bg-[#F39C12]"></span>
+                    Moderate
+                  </span>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <div class="inline-flex items-center gap-1">
+                    <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 stroke-[1.5] text-[#E74C3C]"></i>
+                    <span class="font-medium text-[#E74C3C]">+4.2 pp</span>
+                  </div>
+                  <span>vs previous year</span>
+                </div>
+              </div>
+
+              <div class="group rounded-xl border border-slate-200 bg-white px-4 py-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
+                <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                  Debt service / revenue
+                </p>
+                <div class="flex items-baseline gap-2 mb-2">
+                  <p class="text-3xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    29%
+                  </p>
+                  <span class="inline-flex items-center gap-1 text-xs font-medium text-[#F39C12]">
+                    <span class="h-1.5 w-1.5 rounded-full bg-[#F39C12]"></span>
+                    Upper band
+                  </span>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <div class="inline-flex items-center gap-1">
+                    <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 stroke-[1.5] text-[#E74C3C]"></i>
+                    <span class="font-medium text-[#E74C3C]">+3.1 pts</span>
+                  </div>
+                  <span>5‑year trend</span>
+                </div>
+              </div>
+
+              <div class="group rounded-xl border border-slate-200 bg-white px-4 py-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
+                <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                  Health vs debt service
+                </p>
+                <div class="flex items-baseline gap-2 mb-2">
+                  <p class="text-3xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    0.8×
+                  </p>
+                  <span class="inline-flex items-center gap-1 text-xs font-medium text-[#3498DB]">
+                    <span class="h-1.5 w-1.5 rounded-full bg-[#3498DB]"></span>
+                    Health
+                  </span>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>Median health spend / debt service</span>
+                  <span class="text-xs text-slate-500">Selected region</span>
+                </div>
+              </div>
+
+              <div class="group rounded-xl border border-slate-200 bg-white px-4 py-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
+                <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                  Education vs debt service
+                </p>
+                <div class="flex items-baseline gap-2 mb-2">
+                  <p class="text-3xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    1.1×
+                  </p>
+                  <span class="inline-flex items-center gap-1 text-xs font-medium text-[#2ECC71]">
+                    <span class="h-1.5 w-1.5 rounded-full bg-[#2ECC71]"></span>
+                    Education
+                  </span>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>Median education spend / debt service</span>
+                  <span>All countries</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Charts Section -->
+          <section class="px-4 sm:px-6 lg:px-8 pb-10">
+            <div class="grid gap-6 xl:grid-cols-12">
+              <!-- Bar chart: top at-risk -->
+              <div class="xl:col-span-7 rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                  <div>
+                    <h3 class="text-base sm:text-lg font-medium tracking-tight text-slate-900">
+                      Debt‑to‑GDP by country (sorted by risk)
+                    </h3>
+                    <p class="text-sm text-slate-500">
+                      Highlighting thresholds at 40% and 60% of GDP.
+                    </p>
+                  </div>
+                  <button class="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-1 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-600">
+                    <i data-lucide="swap-vertical" class="h-3.5 w-3.5 stroke-[1.5]"></i>
+                    Sort
+                  </button>
+                </div>
+
+                <div class="mt-2 space-y-2">
+                  <!-- simple mock rows -->
+                  <div class="flex items-center gap-2">
+                    <span class="w-20 text-xs font-medium text-slate-700">
+                      Ghana
+                    </span>
+                    <div class="flex-1 h-4 rounded-full bg-slate-100 overflow-hidden">
+                      <div class="h-full w-4/5 bg-[#E74C3C]"></div>
+                    </div>
+                    <span class="w-10 text-xs font-medium text-slate-900 tabular-nums text-right">
+                      82%
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-20 text-xs font-medium text-slate-700">
+                      Zambia
+                    </span>
+                    <div class="flex-1 h-4 rounded-full bg-slate-100 overflow-hidden">
+                      <div class="h-full w-3/4 bg-[#E74C3C]"></div>
+                    </div>
+                    <span class="w-10 text-xs font-medium text-slate-900 tabular-nums text-right">
+                      74%
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-20 text-xs font-medium text-slate-700">
+                      Kenya
+                    </span>
+                    <div class="flex-1 h-4 rounded-full bg-slate-100 overflow-hidden">
+                      <div class="h-full w-7/12 bg-[#F39C12]"></div>
+                    </div>
+                    <span class="w-10 text-xs font-medium text-slate-900 tabular-nums text-right">
+                      58%
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-20 text-xs font-medium text-slate-700">
+                      Senegal
+                    </span>
+                    <div class="flex-1 h-4 rounded-full bg-slate-100 overflow-hidden">
+                      <div class="h-full w-5/12 bg-[#F39C12]"></div>
+                    </div>
+                    <span class="w-10 text-xs font-medium text-slate-900 tabular-nums text-right">
+                      42%
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-20 text-xs font-medium text-slate-700">
+                      Botswana
+                    </span>
+                    <div class="flex-1 h-4 rounded-full bg-slate-100 overflow-hidden">
+                      <div class="h-full w-1/4 bg-[#2ECC71]"></div>
+                    </div>
+                    <span class="w-10 text-xs font-medium text-slate-900 tabular-nums text-right">
+                      24%
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stacked area: creditor composition -->
+              <div class="xl:col-span-5 rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                  <div>
+                    <h3 class="text-base sm:text-lg font-medium tracking-tight text-slate-900">
+                      Creditor composition over time
+                    </h3>
+                    <p class="text-sm text-slate-500">
+                      Multilateral, bilateral, and commercial shares.
+                    </p>
+                  </div>
+                  <button class="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-1 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-600">
+                    <i data-lucide="calendar" class="h-3.5 w-3.5 stroke-[1.5]"></i>
+                    2010–2024
+                  </button>
+                </div>
+                <div class="h-40 sm:h-44 mt-2 rounded-lg bg-slate-50 border border-dashed border-slate-200 relative overflow-hidden">
+                  <div class="absolute inset-0">
+                    <div class="absolute inset-x-0 bottom-0 h-14 bg-[#E74C3C]/70"></div>
+                    <div class="absolute inset-x-0 bottom-14 h-16 bg-[#F39C12]/80"></div>
+                    <div class="absolute inset-x-0 bottom-30 h-16 bg-[#3498DB]/80"></div>
+                  </div>
+                  <div class="absolute top-2 right-2 rounded-md bg-white/90 border border-slate-200 px-2 py-1 text-[0.7rem] text-slate-600 flex items-center gap-2">
+                    <span class="inline-flex items-center gap-1">
+                      <span class="h-2 w-2 rounded-full bg-[#3498DB]"></span>
+                      Multilateral
+                    </span>
+                    <span class="inline-flex items-center gap-1">
+                      <span class="h-2 w-2 rounded-full bg-[#F39C12]"></span>
+                      Bilateral
+                    </span>
+                    <span class="inline-flex items-center gap-1">
+                      <span class="h-2 w-2 rounded-full bg-[#E74C3C]"></span>
+                      Commercial
+                    </span>
+                  </div>
+                  <div class="absolute left-3 bottom-3 rounded-md bg-white/90 border border-slate-200 px-2 py-1 text-[0.7rem] text-slate-700">
+                    <p class="font-medium tracking-tight">
+                      Hover for year details
+                    </p>
+                    <p class="text-[0.7rem] text-slate-500">
+                      2023: 41% multilateral · 24% bilateral · 35% commercial
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Deep Dive & Simulator -->
+          <section class="px-4 sm:px-6 lg:px-8 pb-10">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900">
+                  Country deep dive &amp; scenarios
+                </h2>
+                <p class="text-sm text-slate-500">
+                  Select a country from the heatmap or search to populate these panels.
+                </p>
+              </div>
+              <button class="hidden sm:inline-flex items-center gap-1 text-xs font-medium uppercase tracking-[0.16em] text-slate-600">
+                <i data-lucide="mouse-pointer-2" class="h-3.5 w-3.5 stroke-[1.5]"></i>
+                Sync with map
+              </button>
+            </div>
+
+            <div class="grid gap-6 xl:grid-cols-12">
+              <!-- Current vs Scenario -->
+              <div class="xl:col-span-7 rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm space-y-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <h3 class="text-base sm:text-lg font-medium tracking-tight text-slate-900">
+                      Current vs reform scenario
+                    </h3>
+                    <span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[0.7rem] font-medium tracking-[0.14em] uppercase text-slate-600">
+                      Nigeria (example)
+                    </span>
+                  </div>
+                  <button class="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-1 text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-600">
+                    Reset
+                  </button>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <!-- Current -->
+                  <div class="rounded-lg border border-slate-200 bg-slate-50/80 p-3 sm:p-4">
+                    <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500 mb-1">
+                      Current path
+                    </p>
+                    <p class="text-sm font-medium tracking-tight text-slate-900 mb-3">
+                      As of latest available year.
+                    </p>
+                    <div class="space-y-2">
+                      <div class="flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">
+                          Annual debt service
+                        </span>
+                        <span class="text-lg font-semibold tracking-tight text-slate-900 tabular-nums">
+                          $4.8B
+                        </span>
+                      </div>
+                      <div class="flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">
+                          Debt‑to‑GDP
+                        </span>
+                        <span class="text-lg font-semibold tracking-tight text-slate-900 tabular-nums">
+                          69%
+                        </span>
+                      </div>
+                      <div class="flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">
+                          Fiscal space (5‑yr)
+                        </span>
+                        <span class="text-lg font-semibold tracking-tight text-slate-900 tabular-nums">
+                          $0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Scenario -->
+                  <div class="rounded-lg border border-emerald-200 bg-emerald-50/60 p-3 sm:p-4">
+                    <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-emerald-700 mb-1">
+                      Reform scenario
+                    </p>
+                    <p class="text-sm font-medium tracking-tight text-slate-900 mb-3">
+                      Immediate impact if reforms apply from next year.
+                    </p>
+                    <div class="space-y-2">
+                      <div class="flex items-baseline justify-between">
+                        <span class="text-xs text-slate-600">
+                          Annual debt service
+                        </span>
+                        <span class="text-lg font-semibold tracking-tight text-slate-900 tabular-nums">
+                          $3.1B
+                        </span>
+                      </div>
+                      <div class="flex items-baseline justify-between">
+                        <span class="text-xs text-slate-600">
+                          Debt‑to‑GDP (year 5)
+                        </span>
+                        <span class="text-lg font-semibold tracking-tight text-slate-900 tabular-nums">
+                          52%
+                        </span>
+                      </div>
+                      <div class="flex items-baseline justify-between">
+                        <span class="text-xs text-slate-600">
+                          Fiscal space freed (5‑yr)
+                        </span>
+                        <span class="text-lg font-semibold tracking-tight text-emerald-700 tabular-nums">
+                          $8.5B
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Comparison bars: debt vs social -->
+                <div class="mt-2">
+                  <p class="text-xs font-medium uppercase tracking-[0.16em] text-slate-500 mb-2">
+                    Composition of freed fiscal space
+                  </p>
+                  <div class="h-10 rounded-full bg-slate-100 overflow-hidden flex">
+                    <div style="width:40%" class="flex items-center justify-center bg-[#3498DB]/80 text-[0.7rem] font-medium text-slate-900">
+                      Health
+                    </div>
+                    <div style="width:35%" class="flex items-center justify-center bg-[#2ECC71]/80 text-[0.7rem] font-medium text-slate-900">
+                      Education
+                    </div>
+                    <div style="width:25%" class="flex items-center justify-center bg-slate-900/80 text-[0.7rem] font-medium text-white">
+                      Other social
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Simulator controls -->
+              <div class="xl:col-span-5 rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm space-y-4">
+                <h3 class="text-base sm:text-lg font-medium tracking-tight text-slate-900">
+                  Debt relief simulator
+                </h3>
+                <p class="text-sm text-slate-500">
+                  Adjust key levers to see how debt service and fiscal space respond in real time.
+                </p>
+
+                <div class="space-y-4">
+                  <!-- Slider group (visual only) -->
+                  <div class="space-y-1">
+                    <div class="flex items-center justify-between">
+                      <p class="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
+                        Interest rate reduction
+                      </p>
+                      <p class="text-xs font-medium tracking-tight text-slate-700">
+                        250 bps
+                      </p>
+                    </div>
+                    <div class="h-1.5 rounded-full bg-slate-100 relative overflow-hidden">
+                      <div class="absolute inset-y-0 left-0 w-2/3 bg-slate-900"></div>
+                      <div class="absolute -top-1 left-2/3 h-4 w-4 rounded-full bg-white border border-slate-300 shadow-sm"></div>
+                    </div>
+                    <p class="text-[0.7rem] text-slate-500">
+                      Lower coupon rates on external debt stock.
+                    </p>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex items-center justify-between">
+                      <p class="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
+                        Maturity extension
+                      </p>
+                      <p class="text-xs font-medium tracking-tight text-slate-700">
+                        +8 years
+                      </p>
+                    </div>
+                    <div class="h-1.5 rounded-full bg-slate-100 relative overflow-hidden">
+                      <div class="absolute inset-y-0 left-0 w-1/2 bg-slate-900"></div>
+                      <div class="absolute -top-1 left-1/2 h-4 w-4 rounded-full bg-white border border-slate-300 shadow-sm"></div>
+                    </div>
+                    <p class="text-[0.7rem] text-slate-500">
+                      Push repayments into later years to smooth the profile.
+                    </p>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex items-center justify-between">
+                      <p class="text-xs font-medium uppercase tracking-[0.16em] text-slate-500">
+                        Principal haircut
+                      </p>
+                      <p class="text-xs font-medium tracking-tight text-slate-700">
+                        22%
+                      </p>
+                    </div>
+                    <div class="h-1.5 rounded-full bg-slate-100 relative overflow-hidden">
+                      <div class="absolute inset-y-0 left-0 w-1/3 bg-slate-900"></div>
+                      <div class="absolute -top-1 left-1/3 h-4 w-4 rounded-full bg-white border border-slate-300 shadow-sm"></div>
+                    </div>
+                    <p class="text-[0.7rem] text-slate-500">
+                      Nominal reduction in principal held by private creditors.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Impact summary -->
+                <div class="mt-3 rounded-lg border border-slate-200 bg-slate-50/80 p-3 space-y-2">
+                  <p class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-slate-500">
+                    Instant impact summary
+                  </p>
+                  <div class="grid grid-cols-3 gap-3">
+                    <div>
+                      <p class="text-[0.7rem] text-slate-500">
+                        Annual payment change
+                      </p>
+                      <p class="text-sm font-semibold tracking-tight text-emerald-700 tabular-nums">
+                        −$1.7B
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-[0.7rem] text-slate-500">
+                        5‑yr fiscal space
+                      </p>
+                      <p class="text-sm font-semibold tracking-tight text-emerald-700 tabular-nums">
+                        +$8.5B
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-[0.7rem] text-slate-500">
+                        Debt‑to‑GDP in 5 yrs
+                      </p>
+                      <p class="text-sm font-semibold tracking-tight text-slate-900 tabular-nums">
+                        52%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Opportunity Cost -->
+          <section class="px-4 sm:px-6 lg:px-8 pb-12">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900">
+                  Opportunity cost of debt service
+                </h2>
+                <p class="text-sm text-slate-500">
+                  Translate redirected money into tangible social investments.
+                </p>
+              </div>
+              <div class="hidden sm:flex items-center gap-2 text-[0.7rem] text-slate-500">
+                <span>Assumes:</span>
+                <span class="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-0.5">
+                  Schools: $875k
+                </span>
+                <span class="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-0.5">
+                  Hospitals: $11.6M
+                </span>
+              </div>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              <!-- Schools -->
+              <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm flex flex-col gap-3">
+                <div class="flex items-center gap-2">
+                  <div class="h-8 w-8 rounded-full bg-slate-900/90 flex items-center justify-center">
+                    <span class="text-xs font-semibold tracking-tight text-white">
+                      🏫
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium tracking-tight text-slate-900">
+                      Primary schools
+                    </p>
+                    <p class="text-[0.7rem] text-slate-500">
+                      Unit cost: $875k
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-[0.7rem] text-slate-500 mb-1">
+                    If scenario savings are redirected:
+                  </p>
+                  <p class="text-2xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    9,700
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    additional schools financed across 5 years.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hospitals -->
+              <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm flex flex-col gap-3">
+                <div class="flex items-center gap-2">
+                  <div class="h-8 w- rounded-full bg-[#3498DB] flex items-center justify-center">
+                    <span class="text-xs font-semibold tracking-tight text-white">
+                      🏥
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium tracking-tight text-slate-900">
+                      District hospitals
+                    </p>
+                    <p class="text-[0.7rem] text-slate-500">
+                      Unit cost: $11.6M
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-[0.7rem] text-slate-500 mb-1">
+                    Equivalent to building:
+                  </p>
+                  <p class="text-2xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    730
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    new district‑level facilities.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Vaccines -->
+              <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm flex flex-col gap-3">
+                <div class="flex items-center gap-2">
+                  <div class="h-8 w-8 rounded-full bg-[#3498DB]/80 flex items-center justify-center">
+                    <span class="text-xs font-semibold tracking-tight text-white">
+                      💉
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium tracking-tight text-slate-900">
+                      Essential vaccines
+                    </p>
+                    <p class="text-[0.7rem] text-slate-500">
+                      Unit cost: $50 / child
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-[0.7rem] text-slate-500 mb-1">
+                    Children fully immunised:
+                  </p>
+                  <p class="text-2xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    170M
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    over the 5‑year savings horizon.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Teachers -->
+              <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm flex flex-col gap-3">
+                <div class="flex items-center gap-2">
+                  <div class="h-8 w-8 rounded-full bg-[#2ECC71] flex items-center justify-center">
+                    <span class="text-xs font-semibold tracking-tight text-white">
+                      👩‍🏫
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium tracking-tight text-slate-900">
+                      Teachers funded
+                    </p>
+                    <p class="text-[0.7rem] text-slate-500">
+                      Unit cost: $8k per year
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-[0.7rem] text-slate-500 mb-1">
+                    Teacher‑years financed:
+                  </p>
+                  <p class="text-2xl font-semibold tracking-tight text-slate-900 tabular-nums">
+                    1.06M
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    based on reallocating saved debt service.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footnote -->
+            <p class="mt-3 text-[0.7rem] text-slate-500">
+              All conversions use illustrative unit costs. Actual country‑level estimates can be configured in data settings.
+            </p>
+          </section>
+
+          <!-- Footer / CTA -->
+          <footer class="border-t border-slate-200 bg-white">
+            <div class="px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <p class="text-sm font-medium tracking-tight text-slate-900">
+                  Bring this dashboard into your policy workflow.
+                </p>
+                <p class="text-sm text-slate-500">
+                  Export static storyboards, or integrate with your data pipeline.
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button class="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-slate-700 hover:bg-slate-50">
+                  <i data-lucide="sliders-horizontal" class="h-3.5 w-3.5 stroke-[1.5]"></i>
+                  View design tokens
+                </button>
+                <button class="inline-flex items-center gap-2 rounded-md bg-slate-900 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-white hover:bg-black">
+                  <i data-lucide="file-text" class="h-3.5 w-3.5 stroke-[1.5]"></i>
+                  Download spec
+                </button>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  
+</body></html>
