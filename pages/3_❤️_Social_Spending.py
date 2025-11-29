@@ -251,7 +251,7 @@ st.markdown("""
 try:
     with st.spinner('Creating comparison chart...'):
         comparison_chart = create_comparison_bar_chart(filtered_df, year=latest_year)
-    st.plotly_chart(comparison_chart, use_container_width=True, key="social_comparison")
+    st.plotly_chart(comparison_chart, width="stretch", key="social_comparison")
     
     # Alert for countries where debt exceeds health
     if debt_exceeds_health:

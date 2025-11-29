@@ -270,7 +270,7 @@ with chart_col1:
     try:
         with st.spinner('Creating debt service chart...'):
             bar_chart = create_debt_service_bar_chart(filtered_df, year=latest_year, top_n=25)
-        st.plotly_chart(bar_chart, use_container_width=True, key="debt_service_bar")
+        st.plotly_chart(bar_chart, width="stretch", key="debt_service_bar")
     except Exception as e:
         st.error(f"Error creating chart: {e}")
 
@@ -289,7 +289,7 @@ with chart_col2:
     try:
         with st.spinner('Creating creditor composition chart...'):
             area_chart = create_creditor_stacked_area(filtered_df)
-        st.plotly_chart(area_chart, use_container_width=True, key="creditor_area")
+        st.plotly_chart(area_chart, width="stretch", key="creditor_area")
     except Exception as e:
         st.error(f"Error creating chart: {e}")
 

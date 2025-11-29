@@ -296,7 +296,7 @@ with trend_col1:
         hovermode='x unified'
     )
     
-    st.plotly_chart(fig1, use_container_width=True, key="debt_trend")
+    st.plotly_chart(fig1, width="stretch", key="debt_trend")
 
 with trend_col2:
     # Debt service over time
@@ -324,7 +324,7 @@ with trend_col2:
         hovermode='x unified'
     )
     
-    st.plotly_chart(fig2, use_container_width=True, key="service_trend")
+    st.plotly_chart(fig2, width="stretch", key="service_trend")
 
 st.markdown("<br><br>", unsafe_allow_html=True)
 

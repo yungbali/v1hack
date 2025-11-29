@@ -106,11 +106,11 @@ col1, col2 = st.columns(2)
 
 with col1:
     bar_chart = create_debt_service_bar_chart(filtered_df, year=2024, top_n=20)
-    st.plotly_chart(bar_chart, use_container_width=True)
+    st.plotly_chart(bar_chart, width="stretch")
 
 with col2:
     area_chart = create_creditor_stacked_area(filtered_df)
-    st.plotly_chart(area_chart, use_container_width=True)
+    st.plotly_chart(area_chart, width="stretch")
 ```
 
 ## Files Modified/Created

@@ -271,7 +271,7 @@ if all(col in latest_data.columns for col in ['creditor_multilateral_pct', 'cred
         margin=dict(l=50, r=50, t=50, b=100)
     )
     
-    st.plotly_chart(fig, use_container_width=True, key="creditor_mix_bar")
+    st.plotly_chart(fig, width="stretch", key="creditor_mix_bar")
 else:
     st.info("Creditor composition data not available")
 

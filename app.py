@@ -20,7 +20,17 @@ from components.social_impact import (
 )
 from components.data_governance import render_manual_review_interface
 from components.ai_advisor import render_ai_advisor_interface
-from components.pan_african import render_policy_relationship_map
+try:
+    from components.pan_african import render_policy_relationship_map
+except ImportError:  # fallback for older deployments
+
+    def render_policy_relationship_map():
+        st.warning(
+            "Policy relationship map component is unavailable in this build.",
+            icon="⚠️",
+        )
+
+
 from utils.constants import AFRICAN_COUNTRIES
 
 warnings.filterwarnings("ignore")
@@ -1057,7 +1067,7 @@ if page == "📊 Overview":
                 unsafe_allow_html=True,
             )
             chart_col.plotly_chart(fig,
-                                   use_container_width=True,
+                                   width="stretch",
                                    config={"displayModeBar": False})
             chart_col.markdown("</div>", unsafe_allow_html=True)
         else:
@@ -1159,7 +1169,7 @@ if page == "📊 Overview":
             )
             ts_col.plotly_chart(
                 trend_fig,
-                use_container_width=True,
+                width="stretch",
                 config={"displayModeBar": False},
             )
         else:
@@ -1233,7 +1243,7 @@ if page == "📊 Overview":
                     )
                     driver_col.plotly_chart(
                         fig,
-                        use_container_width=True,
+                        width="stretch",
                         config={"displayModeBar": False},
                     )
             else:
@@ -1526,11 +1536,11 @@ elif page == "🧮 Driver Analysis":
             fig.update_layout(yaxis_title="β coefficient",
                               xaxis_title="Driver",
                               coloraxis_showscale=False)
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
             st.dataframe(subset[[
                 "coefficient", "beta", "p_value", "r_squared", "n_obs"
             ]],
-                         use_container_width=True)
+                         width="stretch")
             top_driver = subset.iloc[0]
             st.markdown(f"""
                 **Interpretation:** Every 1pp increase in `{top_driver['coefficient']}` shifts the deficit by
@@ -1552,7 +1562,7 @@ elif page == "⚠️ Risk & Forecast":
         for col, (country, count) in zip(cols, top_risks.items(),
                                          strict=False):
             col.metric(country, f"{count} critical outliers")
-        st.dataframe(anomalies_df, use_container_width=True)
+        st.dataframe(anomalies_df, width="stretch")
 
     st.markdown("### 📦 Distribution Stress Test")
     if feature_matrix.empty:
@@ -1575,7 +1585,7 @@ elif page == "⚠️ Risk & Forecast":
             title=f"{metric_label} distribution (2000–2024)",
             labels={"value_pct": metric_label},
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
     st.markdown("### 🔮 Forecasting (ARIMA)")
     if forecast_df.empty or feature_matrix.empty:
@@ -1635,7 +1645,7 @@ elif page == "⚠️ Risk & Forecast":
             f"{forecast_country}: {metric_choice.replace('_', ' ').title()} outlook",
             yaxis_title="Percent of GDP",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
 elif page == "🧠 Simulator":
     st.markdown(
@@ -1768,7 +1778,7 @@ elif page == "🌱 Social Impact":
             st.markdown("<div style='margin-top:1.5rem;'></div>",
                         unsafe_allow_html=True)
             chart = create_comparison_bar_chart(social_df, year=latest_year)
-            st.plotly_chart(chart, use_container_width=True)
+            st.plotly_chart(chart, width="stretch")
 
             if countries_over_health:
                 preview = ", ".join(countries_over_health[:8])

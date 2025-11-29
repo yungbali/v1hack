@@ -417,7 +417,7 @@ if page == "Overview":
     fig.update_xaxis(showgrid=True, gridcolor='#E2E8F0')
     fig.update_yaxis(showgrid=True, gridcolor='#E2E8F0')
     
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
     
     # Key insights
     st.markdown("""
@@ -453,7 +453,7 @@ if page == "Overview":
                 labels={'Amount_standardised': 'Revenue (Billions)', 'Year': 'Year'}
             )
             fig_rev.update_layout(height=400, hovermode='x unified')
-            st.plotly_chart(fig_rev, use_container_width=True)
+            st.plotly_chart(fig_rev, width="stretch")
         else:
             st.info("No revenue data available for selected filters")
     
@@ -469,7 +469,7 @@ if page == "Overview":
                 labels={'Amount_standardised': 'Debt (Billions)', 'Year': 'Year'}
             )
             fig_debt.update_layout(height=400, hovermode='x unified')
-            st.plotly_chart(fig_debt, use_container_width=True)
+            st.plotly_chart(fig_debt, width="stretch")
         else:
             st.info("No debt data available for selected filters")
     
@@ -487,7 +487,7 @@ if page == "Overview":
             fig_inf.add_hline(y=10, line_dash="dash", line_color="red",
                             annotation_text="10% Warning Threshold")
             fig_inf.update_layout(height=400, hovermode='x unified')
-            st.plotly_chart(fig_inf, use_container_width=True)
+            st.plotly_chart(fig_inf, width="stretch")
         else:
             st.info("No inflation data available for selected filters")
 
@@ -634,7 +634,7 @@ elif page == "Country Deep-Dive":
                     labels={'Amount_standardised': 'Amount (Billions)'}
                 )
                 fig_rev.update_layout(height=350)
-                st.plotly_chart(fig_rev, use_container_width=True)
+                st.plotly_chart(fig_rev, width="stretch")
         
         with col_b:
             # Expenditure composition
@@ -650,7 +650,7 @@ elif page == "Country Deep-Dive":
                     labels={'Amount_standardised': 'Amount (Billions)'}
                 )
                 fig_exp.update_layout(height=350)
-                st.plotly_chart(fig_exp, use_container_width=True)
+                st.plotly_chart(fig_exp, width="stretch")
 
 elif page == "SDG Impact":
     st.markdown('<div class="section-header">🎯 SDG Impact Analysis</div>', unsafe_allow_html=True)
@@ -829,7 +829,7 @@ else:  # Data Quality page
             color_continuous_scale='Blues'
         )
         fig_countries.update_layout(height=500, showlegend=False)
-        st.plotly_chart(fig_countries, use_container_width=True)
+        st.plotly_chart(fig_countries, width="stretch")
     
     with col_b:
         # Indicator coverage
@@ -844,7 +844,7 @@ else:  # Data Quality page
             color_continuous_scale='Greens'
         )
         fig_indicators.update_layout(height=500, showlegend=False)
-        st.plotly_chart(fig_indicators, use_container_width=True)
+        st.plotly_chart(fig_indicators, width="stretch")
     
     st.markdown("<br>", unsafe_allow_html=True)
     

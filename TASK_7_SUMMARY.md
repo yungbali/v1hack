@@ -117,7 +117,7 @@ from components.social_impact import (
 
 # Create comparison chart
 fig = create_comparison_bar_chart(df, year=2024)
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 # Identify countries for highlighting
 highlight_countries = identify_countries_debt_exceeds_health(df)

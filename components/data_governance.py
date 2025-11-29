@@ -205,18 +205,18 @@ def render_manual_review_interface():
     ac1, ac2, ac3 = st.columns(3)
     
     with ac1:
-        if st.button("🧮 Average Values", use_container_width=True):
+        if st.button("🧮 Average Values", width="stretch"):
             avg_val = cluster_data['Amount'].mean()
             resolve_conflict(meta, "average", avg_val, "Averaged all candidates")
             st.rerun()
             
     with ac2:
-        if st.button("❌ Not Duplicates (Keep All)", use_container_width=True):
+        if st.button("❌ Not Duplicates (Keep All)", width="stretch"):
             resolve_conflict(meta, "keep_all", None, "Marked as distinct records")
             st.rerun()
             
     with ac3:
-        if st.button("⏩ Skip for Now", use_container_width=True):
+        if st.button("⏩ Skip for Now", width="stretch"):
             st.session_state.current_cluster_index += 1
             st.rerun()
 
