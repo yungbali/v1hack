@@ -34,9 +34,6 @@ htmlcov/
 # Streamlit
 .streamlit/secrets.toml
 
-# Data cache (keep structure, ignore large files)
-data/cached/*.parquet
-data/cached/*.csv
 
 # IDE
 .vscode/

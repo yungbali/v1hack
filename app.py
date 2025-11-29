@@ -20,6 +20,7 @@ from components.social_impact import (
 )
 from components.data_governance import render_manual_review_interface
 from components.ai_advisor import render_ai_advisor_interface
+from components.pan_african import render_policy_relationship_map
 from utils.constants import AFRICAN_COUNTRIES
 
 warnings.filterwarnings("ignore")
@@ -36,6 +37,7 @@ METRIC_LABEL_OVERRIDES = {
     "fiscal_burden": "Debt Service / Revenue",
     "gdp_growth": "GDP Growth (%)",
 }
+
 
 def clean_html(html: str) -> str:
     """Strip leading whitespace from HTML blocks to avoid Markdown fencing."""
@@ -87,10 +89,10 @@ st.markdown(
         .stApp {
             background-color: var(--slate-50);
         }
-        
+
         footer { visibility: hidden; }
         .stDeployButton { display: none; }
-    
+
         [data-testid="stSidebar"] {
             background-color: #FFFFFF;
             border-right: 1px solid var(--slate-200);
@@ -375,22 +377,22 @@ st.markdown(
         .fi-status.verified { color: #059669; }
         .fi-status.pending { color: #475569; }
 
-        div[data-testid=\"stSlider\"] > div:nth-child(1) {
+        div[data-testid="stSlider"] > div:nth-child(1) {
             padding-bottom: 0;
         }
 
-        div[data-testid=\"stSlider\"] .css-14xtw13,
-        div[data-testid=\"stSlider\"] .stSlider > div > div > div:nth-child(2) {
+        div[data-testid="stSlider"] .css-14xtw13,
+        div[data-testid="stSlider"] .stSlider > div > div > div:nth-child(2) {
             background: #FFFFFF;
             border: 2px solid #FFFFFF;
             box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);
         }
 
-        div[data-testid=\"stSlider\"] .stSlider > div > div > div:nth-child(1) {
+        div[data-testid="stSlider"] .stSlider > div > div > div:nth-child(1) {
             background: var(--slate-200);
         }
 
-        div[data-testid=\"stHorizontalBlock\"] > div {
+        div[data-testid="stHorizontalBlock"] > div {
             gap: 1.25rem;
     }
     </style>
@@ -495,12 +497,16 @@ def build_recommendation_cards(features: pd.DataFrame,
 
     driver_templates = {
         "wage_proxy_pct_gdp": {
-            "title": "Public wage bill is widening deficits",
+            "title":
+            "Public wage bill is widening deficits",
             "action":
             "Freeze non-essential public hiring and digitise payroll to eliminate ghost workers; redirect savings into capital projects.",
-            "target": lambda current:
-            f"Reduce wage bill share from {format_pct(current)} to {format_pct(max(current - 0.01, 0), 1)} by FY2027.",
-            "timeline": "0–24 months",
+            "target":
+            lambda current:
+            f"Reduce wage bill share from {format_pct(current)} to "
+            f"{format_pct(max(current - 0.01, 0), 1)} by FY2027.",
+            "timeline":
+            "0–24 months",
         },
         "revenue_volatility": {
             "title": "Revenue base is too volatile",
@@ -542,34 +548,39 @@ def build_recommendation_cards(features: pd.DataFrame,
             continue
 
         current_metric = latest_row[best["coefficient"]].iloc[0]
-        cards.append(
-            {
-            "Country": country,
-            "Narrative": template["title"],
-                "Finding": f"β = {
-                    best['beta']:.2f} with R² {
-                    best['r_squared']:.2f}. Every 1pp change in this driver shifts the deficit meaningfully.",
-            "Action": template["action"],
-            "Target": template["target"](current_metric),
-            "Timeline": template["timeline"],
+        cards.append({
+            "Country":
+            country,
+            "Narrative":
+            template["title"],
+            "Finding":
+            (f"β = {best['beta']:.2f} with R² {best['r_squared']:.2f}. "
+             "Every 1pp change in this driver shifts the deficit meaningfully."
+             ),
+            "Action":
+            template["action"],
+            "Target":
+            template["target"](current_metric),
+            "Timeline":
+            template["timeline"],
         })
     return cards
 
 
-def render_metric_card(
-        title: str,
-        value: str,
-        subtitle: str,
-        *,
-        badge: str | None = None,
-        badge_variant: str = "neutral",
-        delta_text: str | None = None,
-        delta_direction: str = "neutral") -> str:
+def render_metric_card(title: str,
+                       value: str,
+                       subtitle: str,
+                       *,
+                       badge: str | None = None,
+                       badge_variant: str = "neutral",
+                       delta_text: str | None = None,
+                       delta_direction: str = "neutral") -> str:
     """Return HTML snippet for a branded KPI card."""
     badge_html = f'<span class="fi-badge {badge_variant}">{badge}</span>' if badge else ""
     arrow = {"up": "▲", "down": "▼", "neutral": ""}.get(delta_direction, "")
-    delta_html = (f'<span class="fi-delta {delta_direction}">{arrow} {delta_text}</span>'
-                  if delta_text else "")
+    delta_html = (
+        f'<span class="fi-delta {delta_direction}">{arrow} {delta_text}</span>'
+        if delta_text else "")
     return clean_html(f"""
         <div class="fi-card">
             <div class="fi-card-top">
@@ -595,7 +606,8 @@ def format_indicator_value(metric: str, value: float | None) -> str:
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return "–"
     metric_lower = metric.lower()
-    if any(token in metric_lower for token in ("pct", "share", "rate", "ratio")):
+    if any(token in metric_lower
+           for token in ("pct", "share", "rate", "ratio")):
         return f"{value * 100:.1f}%"
     return f"{value:,.2f}"
 
@@ -621,20 +633,27 @@ def render_risk_badges(anomalies_df: pd.DataFrame, max_cards: int = 4) -> str:
     def _max_severity(series: pd.Series) -> str:
         return max(series, key=lambda s: severity_order.get(s, 0))
 
-    grouped = (summary.groupby("Country", as_index=False).agg(
-        alerts=("Country", "size"),
-        severity=("Severity_bucket", _max_severity)))
-    grouped["severity_score"] = grouped["severity"].map(severity_order).fillna(0)
-    grouped = grouped.sort_values(
-        ["severity_score", "alerts"], ascending=[False, False]).head(max_cards)
+    grouped = (summary.groupby("Country",
+                               as_index=False).agg(alerts=("Country", "size"),
+                                                   severity=("Severity_bucket",
+                                                             _max_severity)))
+    grouped["severity_score"] = grouped["severity"].map(severity_order).fillna(
+        0)
+    grouped = grouped.sort_values(["severity_score", "alerts"],
+                                  ascending=[False, False]).head(max_cards)
 
-    caption = {"High": "Critical Outliers", "Medium": "Warning Flags", "Low": "QA Check"}
+    caption = {
+        "High": "Critical Outliers",
+        "Medium": "Warning Flags",
+        "Low": "QA Check"
+    }
     icon = {"High": "!", "Medium": "⚠️", "Low": "ℹ️"}
 
     cards = []
     for _, row in grouped.iterrows():
         sev = row["severity"]
-        cards.append(clean_html(f"""
+        cards.append(
+            clean_html(f"""
             <div class="fi-risk-card {sev.lower()}">
                 <div class="fi-risk-icon">{icon.get(sev, 'ℹ️')}</div>
                 <div>
@@ -653,9 +672,11 @@ def render_anomaly_table(anomalies_df: pd.DataFrame, max_rows: int = 6) -> str:
     subset["abs_z"] = subset["Zscore"].abs()
     subset = subset.sort_values("abs_z", ascending=False).head(max_rows)
 
-    severity_badge = {"High": ("critical", "High"),
-                      "Medium": ("warning", "Medium"),
-                      "Low": ("neutral", "Low")}
+    severity_badge = {
+        "High": ("critical", "High"),
+        "Medium": ("warning", "Medium"),
+        "Low": ("neutral", "Low")
+    }
     rows = []
     for _, row in subset.iterrows():
         sev = severity_from_zscore(row["Zscore"])
@@ -663,8 +684,10 @@ def render_anomaly_table(anomalies_df: pd.DataFrame, max_rows: int = 6) -> str:
         status = "Review Pending" if sev != "Low" else "Verified"
         status_class = "pending" if sev != "Low" else "verified"
         metric_label = prettify_metric(str(row["Metric"]))
-        value_display = format_indicator_value(str(row["Metric"]), row["Value"])
-        rows.append(clean_html(f"""
+        value_display = format_indicator_value(str(row["Metric"]),
+                                               row["Value"])
+        rows.append(
+            clean_html(f"""
             <tr>
                 <td>{row['Country']}</td>
                 <td>{metric_label}</td>
@@ -756,13 +779,13 @@ with st.sidebar:
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Navigation
-    default_key = st.secrets.get("GEMINI_API_KEY", "")
-    api_key = st.text_input(
-        "Gemini API Key",
-        value=default_key,
-        type="password",
-        help="Provide a key to enable the AI Advisor",
-    )
+    api_key = st.secrets.get("GEMINI_API_KEY", "")
+    # api_key = st.text_input(
+    #     "Gemini API Key",
+    #     value=default_key,
+    #     type="password",
+    #     help="Provide a key to enable the AI Advisor",
+    # )
 
     st.markdown("### 🎯 Navigate Dashboard")
     page = st.radio(
@@ -853,9 +876,9 @@ st.markdown(
         </h1>
         <p style="font-size: 1.25rem; color: #64748B; margin: 0.5rem 0 0 0;">
             Evidence-Based Solutions for Sustainable Development Across Africa
-        </p>
-    </div>
-    """,
+            </p>
+        </div>
+""",
     unsafe_allow_html=True,
 )
 
@@ -877,7 +900,8 @@ if page == "📊 Overview":
     else:
         total_countries = max(scorecard["Country"].nunique(), 1)
         debt_series = scorecard["Debt_to_GDP"].dropna()
-        median_debt = debt_series.median() * 100 if not debt_series.empty else 0.0
+        median_debt = debt_series.median(
+        ) * 100 if not debt_series.empty else 0.0
         debt_delta = median_debt - 60
         debt_direction = "up" if debt_delta > 0 else "down" if debt_delta < 0 else "neutral"
         col1, col2, col3, col4 = st.columns(4)
@@ -923,14 +947,11 @@ if page == "📊 Overview":
 
         inflation_column = "Inflation Rate"
         if "Inflation Rate" not in scorecard.columns:
-            inflation_column = (
-                "Inflation_pct" if "Inflation_pct" in scorecard.columns else None
-            )
-        avg_inflation = (
-            scorecard[inflation_column].dropna().mean()
-            if inflation_column and inflation_column in scorecard.columns
-            else None
-        )
+            inflation_column = ("Inflation_pct" if "Inflation_pct"
+                                in scorecard.columns else None)
+        avg_inflation = (scorecard[inflation_column].dropna().mean()
+                         if inflation_column
+                         and inflation_column in scorecard.columns else None)
         if avg_inflation is not None and not pd.isna(avg_inflation):
             inf_delta = avg_inflation - 10
             inf_direction = "up" if inf_delta > 0 else "down" if inf_delta < 0 else "neutral"
@@ -940,7 +961,8 @@ if page == "📊 Overview":
                     value=f"{avg_inflation:.1f}%",
                     subtitle="Year-over-year change",
                     badge="Elevated" if avg_inflation > 10 else "Stabilizing",
-                    badge_variant="critical" if avg_inflation > 10 else "success",
+                    badge_variant="critical"
+                    if avg_inflation > 10 else "success",
                     delta_text=f"{inf_delta:+.1f} pts vs 10% cap",
                     delta_direction=inf_direction,
                 ),
@@ -958,7 +980,8 @@ if page == "📊 Overview":
                 unsafe_allow_html=True,
             )
 
-        st.markdown("<div style='height: 1rem;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 1rem;'></div>",
+                    unsafe_allow_html=True)
 
         chart_col, insight_col = st.columns((2, 1))
         focus_scorecard = scorecard[scorecard["Country"].isin(FOCUS_COUNTRIES)]
@@ -992,9 +1015,9 @@ if page == "📊 Overview":
                                 color=palette.get(country, "#6366F1"),
                                 line=dict(color="white", width=2),
                             ),
-                            hovertemplate="<b>%{text}</b><br>Revenue/GDP: %{x:.1f}%<br>Debt/GDP: %{y:.1f}%<extra></extra>",
-                        )
-                    )
+                            hovertemplate=
+                            "<b>%{text}</b><br>Revenue/GDP: %{x:.1f}%<br>Debt/GDP: %{y:.1f}%<extra></extra>",
+                        ))
             fig.add_hline(
                 y=90,
                 line_dash="dash",
@@ -1033,9 +1056,9 @@ if page == "📊 Overview":
                 """,
                 unsafe_allow_html=True,
             )
-            chart_col.plotly_chart(
-                fig, use_container_width=True, config={"displayModeBar": False}
-            )
+            chart_col.plotly_chart(fig,
+                                   use_container_width=True,
+                                   config={"displayModeBar": False})
             chart_col.markdown("</div>", unsafe_allow_html=True)
         else:
             chart_col.info("Insufficient data to render the risk radar.")
@@ -1073,7 +1096,8 @@ if page == "📊 Overview":
             unsafe_allow_html=True,
         )
 
-        st.markdown("<div style='height: 1.5rem;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 1.5rem;'></div>",
+                    unsafe_allow_html=True)
 
         ts_col, driver_col = st.columns(2)
         ts_col.markdown(
@@ -1096,9 +1120,12 @@ if page == "📊 Overview":
             key="trend_toggle",
         )
         trend_map = {
-            "Revenue": ("Revenue", "Amount_standardised", "Revenue (Billions)"),
-            "Debt": ("Government Debt", "Amount_standardised", "Debt (Billions)"),
-            "Inflation": ("Inflation Rate", "Amount_numeric", "Inflation Rate (%)"),
+            "Revenue":
+            ("Revenue", "Amount_standardised", "Revenue (Billions)"),
+            "Debt":
+            ("Government Debt", "Amount_standardised", "Debt (Billions)"),
+            "Inflation":
+            ("Inflation Rate", "Amount_numeric", "Inflation Rate (%)"),
         }
         indicator, value_field, label = trend_map[trend_choice]
         trend_df = filtered_df[filtered_df["Indicator"] == indicator]
@@ -1136,7 +1163,8 @@ if page == "📊 Overview":
                 config={"displayModeBar": False},
             )
         else:
-            ts_col.info("No data available for the selected trend and filters.")
+            ts_col.info(
+                "No data available for the selected trend and filters.")
         ts_col.markdown("</div>", unsafe_allow_html=True)
 
         driver_col.markdown(
@@ -1160,24 +1188,29 @@ if page == "📊 Overview":
                 c for c in driver_df["country"].unique() if c != "Pan-Africa"
             ]
             driver_country = st.session_state.selected_country
-            if (
-                driver_country == "All Countries"
-                or driver_country not in available_countries
-            ):
-                driver_country = available_countries[0] if available_countries else None
+            if (driver_country == "All Countries"
+                    or driver_country not in available_countries):
+                driver_country = available_countries[
+                    0] if available_countries else None
             if driver_country:
-                subset = driver_df[driver_df["country"] == driver_country].sort_values(
-                    "beta", key=lambda s: s.abs(), ascending=False
-                )
+                subset = driver_df[driver_df["country"] ==
+                                   driver_country].sort_values(
+                                       "beta",
+                                       key=lambda s: s.abs(),
+                                       ascending=False)
                 if subset.empty:
-                    driver_col.info(f"No regression results for {driver_country}.")
+                    driver_col.info(
+                        f"No regression results for {driver_country}.")
                 else:
                     r_squared = subset["r_squared"].iloc[0]
                     driver_col.markdown(
                         f"<p class='fi-context' style='margin-bottom:0.5rem;'>Model R²: {r_squared:.2f} • Country: {driver_country}</p>",
                         unsafe_allow_html=True,
                     )
-                    colors = ["#EF4444" if beta > 0 else "#10B981" for beta in subset["beta"]]
+                    colors = [
+                        "#EF4444" if beta > 0 else "#10B981"
+                        for beta in subset["beta"]
+                    ]
                     fig = go.Figure()
                     fig.add_trace(
                         go.Bar(
@@ -1188,8 +1221,7 @@ if page == "📊 Overview":
                                 color=colors,
                                 line=dict(color="rgba(15,23,42,0.1)", width=1),
                             ),
-                        )
-                    )
+                        ))
                     fig.update_layout(
                         height=320,
                         margin=dict(l=10, r=10, t=10, b=10),
@@ -1208,7 +1240,8 @@ if page == "📊 Overview":
                 driver_col.info("No driver analytics available.")
         driver_col.markdown("</div>", unsafe_allow_html=True)
 
-        st.markdown("<div style='height: 1.5rem;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 1.5rem;'></div>",
+                    unsafe_allow_html=True)
 
         st.markdown(
             clean_html("""
@@ -1256,20 +1289,13 @@ elif page == "🗂 Presentation":
     else:
         high_debt = int((scorecard["Debt_to_GDP"] > 0.9).sum())
         weak_rev = int((scorecard["Revenue_to_GDP"] < 0.18).sum())
-        inflation_col = (
-            "Inflation Rate"
-            if "Inflation Rate" in scorecard.columns
-            else "Inflation_pct"
-        )
-        avg_inf = (
-            scorecard[inflation_col].dropna().mean()
-            if inflation_col and inflation_col in scorecard.columns
-            else 0
-        )
+        inflation_col = ("Inflation Rate" if "Inflation Rate"
+                         in scorecard.columns else "Inflation_pct")
+        avg_inf = (scorecard[inflation_col].dropna().mean() if inflation_col
+                   and inflation_col in scorecard.columns else 0)
         anomaly_count = len(anomalies_df) if not anomalies_df.empty else 0
-        forecast_countries = (
-            forecast_df["Country"].nunique() if not forecast_df.empty else 0
-        )
+        forecast_countries = (forecast_df["Country"].nunique()
+                              if not forecast_df.empty else 0)
 
         social_alerts = 0
         if not dashboard_cache_df.empty:
@@ -1281,13 +1307,12 @@ elif page == "🗂 Presentation":
                 "gdp_usd",
                 "health_pct_gdp",
             }
-            if not social_slice.empty and required_cols.issubset(social_slice.columns):
+            if not social_slice.empty and required_cols.issubset(
+                    social_slice.columns):
                 latest_year = int(social_slice["year"].max())
                 social_alerts = len(
-                    identify_countries_debt_exceeds_health(
-                        social_slice, year=latest_year
-                    )
-                )
+                    identify_countries_debt_exceeds_health(social_slice,
+                                                           year=latest_year))
 
         st.markdown(
             clean_html(f"""
@@ -1420,8 +1445,7 @@ elif page == "🗂 Presentation":
                 "Anomaly Scanner",
                 "Z-score + QA pipeline on fiscal flows.",
                 f"{anomaly_count} anomalies flagged for review."
-                if anomaly_count
-                else "No anomalies currently raised.",
+                if anomaly_count else "No anomalies currently raised.",
                 "Escalate to due-diligence log; update QA tab.",
             ),
             (
@@ -1434,23 +1458,19 @@ elif page == "🗂 Presentation":
                 "Social Impact Lab",
                 "Debt vs. health/education comparison + opportunity cost.",
                 f"{social_alerts} countries where debt crowds out health."
-                if social_alerts
-                else "Awaiting latest SDG feed.",
+                if social_alerts else "Awaiting latest SDG feed.",
                 "Use findings in SDG discussion notes & partner briefings.",
             ),
         ]
 
-        rows_html = "".join(
-            f"""
+        rows_html = "".join(f"""
             <tr>
                 <td><strong>{row[0]}</strong></td>
                 <td>{row[1]}</td>
                 <td>{row[2]}</td>
                 <td>{row[3]}</td>
             </tr>
-            """
-            for row in evidence_map
-        )
+            """ for row in evidence_map)
         st.markdown(
             clean_html(f"""
             <div class="fi-table-wrapper" style="margin-top:1rem;">
@@ -1611,11 +1631,10 @@ elif page == "⚠️ Risk & Forecast":
                     name="95% CI",
                 ))
         fig.update_layout(
-            title=f"{forecast_country}: {
-                metric_choice.replace(
-                    '_',
-                    ' ').title()} outlook",
-            yaxis_title="Percent of GDP")
+            title=
+            f"{forecast_country}: {metric_choice.replace('_', ' ').title()} outlook",
+            yaxis_title="Percent of GDP",
+        )
         st.plotly_chart(fig, use_container_width=True)
 
 elif page == "🧠 Simulator":
@@ -1642,7 +1661,8 @@ elif page == "🧠 Simulator":
                  if name == st.session_state.selected_country),
                 "NGA",
             )
-            create_simulator_interface(simulator_df, default_country=default_code)
+            create_simulator_interface(simulator_df,
+                                       default_country=default_code)
 
 elif page == "🌱 Social Impact":
     st.markdown(
@@ -1682,9 +1702,8 @@ elif page == "🌱 Social Impact":
             median_health = latest_slice["health_pct_gdp"].median()
             median_education = latest_slice["education_pct_gdp"].median()
             median_debt_service = latest_slice["debt_service_usd"].median()
-            combined_social = (
-                latest_slice["health_pct_gdp"] + latest_slice["education_pct_gdp"]
-            ).median()
+            combined_social = (latest_slice["health_pct_gdp"] +
+                               latest_slice["education_pct_gdp"]).median()
 
             kpi_col1.markdown(
                 clean_html(f"""
@@ -1715,8 +1734,7 @@ elif page == "🌱 Social Impact":
                 unsafe_allow_html=True,
             )
             countries_over_health = identify_countries_debt_exceeds_health(
-                social_df, year=latest_year
-            )
+                social_df, year=latest_year)
             kpi_col3.markdown(
                 clean_html(f"""
                 <div class="fi-card">
@@ -1769,8 +1787,7 @@ elif page == "🌱 Social Impact":
 
             if pd.notna(median_debt_service) and median_debt_service > 0:
                 opportunity = create_opportunity_cost_panel(
-                    "Median Basket", median_debt_service
-                )
+                    "Median Basket", median_debt_service)
                 st.markdown(
                     clean_html("""
                     <div style="margin:2rem 0 1rem 0;">
@@ -1786,9 +1803,9 @@ elif page == "🌱 Social Impact":
                 )
                 opp_cols = st.columns(4)
                 for col, key in zip(
-                    opp_cols,
+                        opp_cols,
                     ["schools", "hospitals", "vaccine_doses", "teachers"],
-                    strict=False,
+                        strict=False,
                 ):
                     card = opportunity[key]
                     col.markdown(
@@ -1809,6 +1826,18 @@ elif page == "📋 Recommendations":
     st.markdown(
         '<div class="section-header">📋 Actionable Recommendations</div>',
         unsafe_allow_html=True)
+
+    # Add Insight-to-Action Map (New Feature)
+    with st.expander("🗺️ View Policy Relationship Map", expanded=False):
+        st.markdown("""
+        <p style="font-size:0.9rem; color:#64748B; margin-bottom:1rem;">
+            This map visualizes how specific fiscal signals (like high wage bills or volatility)
+            logically flow into the recommended policy interventions below.
+        </p>
+        """,
+                    unsafe_allow_html=True)
+        render_policy_relationship_map()
+
     cards = build_recommendation_cards(feature_matrix, driver_df)
     if not cards:
         st.info("Generate analytics to power recommendation engine.")
@@ -1823,23 +1852,32 @@ elif page == "📋 Recommendations":
 elif page == "🛠️ Data Governance":
     st.markdown('<div class="section-header">🛠️ Data Governance & QA</div>',
                 unsafe_allow_html=True)
-    tab1, tab2 = st.tabs(["🔍 Manual Review Queue", "📑 Quality Report & Limitations"])
+    tab1, tab2 = st.tabs(
+        ["🔍 Manual Review Queue", "📑 Quality Report & Limitations"])
     with tab1:
         render_manual_review_interface()
     with tab2:
         col1, col2, col3, col4 = st.columns(4)
         with col1:
-            st.metric("Total Records",
-                      f"{quality_report.get('total_records', len(df)):,}")
+            st.metric(
+                "Total Records",
+                f"{quality_report.get('total_records', len(df)):,}",
+            )
         with col2:
-            st.metric("Countries",
-                      df['Country'].nunique() if not df.empty else 0)
+            st.metric(
+                "Countries",
+                df['Country'].nunique() if not df.empty else 0,
+            )
         with col3:
-            st.metric("Duplicates Resolved",
-                      quality_report.get("duplicates_resolved", 0))
+            st.metric(
+                "Duplicates Resolved",
+                quality_report.get("duplicates_resolved", 0),
+            )
         with col4:
-            st.metric("Manual Review Pending",
-                      quality_report.get("duplicates_manual_review", 0))
+            st.metric(
+                "Manual Review Pending",
+                quality_report.get("duplicates_manual_review", 0),
+            )
         st.markdown("""
         ### Known Data Limitations
         - **Missing wage-bill microdata:** We proxy the public wage bill using recurrent expenditure, which may understate payroll leakages.

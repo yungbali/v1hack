@@ -37,8 +37,7 @@ def render_pan_african_metadata_cards(
         status_text_color: Hex color for the status text.
     """
     st.markdown(
-        clean_html(
-            f"""
+        clean_html(f"""
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
                 <!-- Scope card -->
                 <div style="border-radius: 0.5rem; border: 1px solid #E2E8F0; background: white; padding: 0.75rem;">
@@ -81,8 +80,7 @@ def render_pan_african_metadata_cards(
                     </p>
                 </div>
             </div>
-            """
-        ),
+            """),
         unsafe_allow_html=True,
     )
 
@@ -92,14 +90,12 @@ def render_objective_banner(
         "Utilize the fiscal datasets to detect patterns, surface debt risks, and craft "
         "evidence-backed restructuring strategies that keep essential social services funded. "
         "Track deficits, creditor mixes, and spending trends across countries to equip policymakers "
-        "with actionable insights."
-    ),
+        "with actionable insights."),
     title: str = "Objective",
 ) -> None:
     """Render a branded banner summarizing the hackathon objective."""
     st.markdown(
-        clean_html(
-            f"""
+        clean_html(f"""
             <div style="margin: 1rem 0 2rem 0; padding: 1.5rem 1.75rem; border-radius: 0.75rem;
                         background: linear-gradient(135deg, #F97316, #EA580C);
                         color: white; border: 1px solid rgba(255, 255, 255, 0.15);">
@@ -120,8 +116,7 @@ def render_objective_banner(
                     </div>
                 </div>
             </div>
-            """
-        ),
+            """),
         unsafe_allow_html=True,
     )
 
@@ -167,8 +162,7 @@ def render_reform_results_summary(
     payment_reduction = f"{payment_reduction_pct:.{percentage_decimals}f}%"
 
     st.markdown(
-        clean_html(
-            f"""
+        clean_html(f"""
             <div style="border-radius: 0.75rem; border: 1px solid #BBF7D0; background: linear-gradient(to bottom, #F0FDF4, #DCFCE7); padding: 1.5rem;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
                     <h3 style="font-size: 1rem; font-weight: 600; color: #0F172A; margin: 0;">
@@ -228,8 +222,7 @@ def render_reform_results_summary(
                     </p>
                 </div>
             </div>
-            """
-        ),
+            """),
         unsafe_allow_html=True,
     )
 
@@ -250,8 +243,7 @@ def render_opportunity_cost_summary(
         entry = panel_data.get(key)
         if not entry:
             continue
-        tiles.append(
-            f"""
+        tiles.append(f"""
             <div style="border-radius: 0.75rem; border: 1px solid #E2E8F0; background: white;
                         padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;
                         text-align: left;">
@@ -272,14 +264,12 @@ def render_opportunity_cost_summary(
                     </p>
                 </div>
             </div>
-            """
-        )
+            """)
 
     grid_html = "".join(tiles)
 
     st.markdown(
-        clean_html(
-            f"""
+        clean_html(f"""
             <div style="margin: 1.5rem 0; padding: 1.25rem; background: #F8FAFC; border-radius: 0.75rem;
                         border: 1px solid #E2E8F0;">
                 <div style="margin-bottom: 1rem;">
@@ -292,8 +282,7 @@ def render_opportunity_cost_summary(
                     {grid_html}
                 </div>
             </div>
-            """
-        ),
+            """),
         unsafe_allow_html=True,
     )
 
@@ -307,9 +296,8 @@ def render_recommendations_panel(
     if not recommendations:
         return
 
-    items_html = "".join(
-        [
-            f"""
+    items_html = "".join([
+        f"""
             <li style="margin-bottom: 0.75rem;">
                 <span style="display: block; font-size: 0.9rem; font-weight: 600; color: #0F172A;">
                     {item.get('title', 'Recommendation')}
@@ -318,14 +306,11 @@ def render_recommendations_panel(
                     {item.get('description', '').strip()}
                 </span>
             </li>
-            """
-            for item in recommendations
-        ]
-    )
+            """ for item in recommendations
+    ])
 
     st.markdown(
-        clean_html(
-            f"""
+        clean_html(f"""
             <div style="margin: 1.5rem 0 0 0; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #E2E8F0;
                         background: white;">
                 <p style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: #64748B; margin: 0 0 0.5rem 0;">
@@ -336,7 +321,54 @@ def render_recommendations_panel(
                     {items_html}
                 </ul>
             </div>
-            """
-        ),
+            """),
         unsafe_allow_html=True,
     )
+
+
+def render_policy_relationship_map():
+    """
+    Renders a Graphviz diagram showing how fiscal data insights flow into concrete policy actions.
+    """
+    st.graphviz_chart("""
+    digraph G {
+        rankdir=LR;
+        node [fontname="Sans-Serif", shape=box, style="rounded,filled", fontsize=10];
+        edge [color="#94A3B8"];
+
+        # Data Sources
+        subgraph cluster_0 {
+            label = "Data Signals";
+            color = "#E2E8F0";
+            style = filled;
+            fillcolor = "#F8FAFC";
+            
+            WageBill [label="High Public Wage Bill\n(>30% Revenue)", fillcolor="#FEF2F2", color="#FECACA"];
+            Volatility [label="High Revenue Volatility\n(Commodity Exposure)", fillcolor="#FFF7ED", color="#FED7AA"];
+            DebtService [label="Debt Service Burden\n(>20% Revenue)", fillcolor="#EFF6FF", color="#BFDBFE"];
+        }
+
+        # Policy Actions
+        subgraph cluster_1 {
+            label = "Strategic Interventions";
+            color = "#E2E8F0";
+            style = filled;
+            fillcolor = "#F0FDF4";
+            
+            PayrollAudit [label="Digitize Payroll\n& Audit Ghost Workers", fillcolor="#FFFFFF"];
+            Hedging [label="Commodity Price Hedging\n& Revenue Smoothing", fillcolor="#FFFFFF"];
+            Reprofiling [label="Debt Reprofiling\n(Extend Maturities)", fillcolor="#FFFFFF"];
+            VATReform [label="Broaden VAT Base\n(Digital Services)", fillcolor="#FFFFFF"];
+        }
+
+        # Relationships
+        WageBill -> PayrollAudit [label="Direct Fix", color="#EF4444", penwidth=2];
+        Volatility -> Hedging [label="Stabilize", color="#F59E0B", penwidth=2];
+        Volatility -> VATReform [label="Diversify", color="#F59E0B", style=dashed];
+        DebtService -> Reprofiling [label="Ease Cashflow", color="#3B82F6", penwidth=2];
+        
+        # Cross-links
+        PayrollAudit -> DebtService [label="Frees Cap", style=dotted];
+        VATReform -> DebtService [label="Boosts Rev", style=dotted];
+    }
+    """)

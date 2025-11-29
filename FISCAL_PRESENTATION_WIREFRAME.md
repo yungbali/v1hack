@@ -1,6 +1,6 @@
 # Fiscal Insight Deck Wireframe
 
-Primary audience: senior policymakers and business leaders seeking actionable guidance on African fiscal stability.  
+Primary audience: senior policymakers and business leaders seeking actionable guidance on African fiscal stability.
 Primary dataset: `10Alytics Hackathon- Fiscal Data.xlsx` (audited via `python scripts/fiscal_data_audit.py`, outputs in `data/processed/`).
 
 ## Slide Flow
