@@ -7,10 +7,14 @@ across the dashboard. Keeping them here avoids duplication and ensures
 both the overview page and the simulator share identical styling.
 """
 
-from textwrap import dedent
 from typing import Dict, List, Optional
 
 import streamlit as st
+
+
+def clean_html(html: str) -> str:
+    """Remove all leading whitespace from each line to avoid Markdown code blocks."""
+    return "\n".join(line.strip() for line in html.splitlines())
 
 
 def render_pan_african_metadata_cards(
@@ -33,7 +37,7 @@ def render_pan_african_metadata_cards(
         status_text_color: Hex color for the status text.
     """
     st.markdown(
-        dedent(
+        clean_html(
             f"""
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
                 <!-- Scope card -->
@@ -94,7 +98,7 @@ def render_objective_banner(
 ) -> None:
     """Render a branded banner summarizing the hackathon objective."""
     st.markdown(
-        dedent(
+        clean_html(
             f"""
             <div style="margin: 1rem 0 2rem 0; padding: 1.5rem 1.75rem; border-radius: 0.75rem;
                         background: linear-gradient(135deg, #F97316, #EA580C);
@@ -163,7 +167,7 @@ def render_reform_results_summary(
     payment_reduction = f"{payment_reduction_pct:.{percentage_decimals}f}%"
 
     st.markdown(
-        dedent(
+        clean_html(
             f"""
             <div style="border-radius: 0.75rem; border: 1px solid #BBF7D0; background: linear-gradient(to bottom, #F0FDF4, #DCFCE7); padding: 1.5rem;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
@@ -274,7 +278,7 @@ def render_opportunity_cost_summary(
     grid_html = "".join(tiles)
 
     st.markdown(
-        dedent(
+        clean_html(
             f"""
             <div style="margin: 1.5rem 0; padding: 1.25rem; background: #F8FAFC; border-radius: 0.75rem;
                         border: 1px solid #E2E8F0;">
@@ -320,7 +324,7 @@ def render_recommendations_panel(
     )
 
     st.markdown(
-        dedent(
+        clean_html(
             f"""
             <div style="margin: 1.5rem 0 0 0; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #E2E8F0;
                         background: white;">

@@ -9,13 +9,17 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 from typing import Optional, Dict
-from textwrap import dedent
 from utils.constants import COLORS, AFRICAN_COUNTRIES
 from utils.calculations import (
     calculate_restructuring_impact,
     calculate_opportunity_cost
 )
 from components.pan_african import render_reform_results_summary
+
+
+def clean_html(html: str) -> str:
+    """Remove all leading whitespace from each line to avoid Markdown code blocks."""
+    return "\n".join(line.strip() for line in html.splitlines())
 
 
 def create_simulator_interface(df: pd.DataFrame, default_country: str = 'NGA') -> None:
@@ -51,7 +55,7 @@ def create_simulator_interface(df: pd.DataFrame, default_country: str = 'NGA') -
         return
     
     # Section header
-    st.markdown(dedent("""
+    st.markdown(clean_html("""
         <div style="margin-bottom: 1.5rem;">
             <div style="display: flex; align-items: center; justify-content: space-between;">
                 <div>
@@ -148,7 +152,7 @@ def _display_current_state(data: pd.Series, country_name: str) -> None:
     fiscal_space_usd = revenue_usd - debt_service_usd
     fiscal_space_billions = fiscal_space_usd / 1_000_000_000
     
-    st.markdown(dedent(f"""
+    st.markdown(clean_html(f"""
         <div style="border-radius: 0.75rem; border: 1px solid #E2E8F0; background: #F8FAFC; padding: 1.5rem; margin-bottom: 1rem;">
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
                 <h3 style="font-size: 1rem; font-weight: 600; color: #0F172A; margin: 0;">
@@ -210,7 +214,7 @@ def _display_scenario_controls(data: pd.Series, country_name: str) -> None:
         - 5.5: Display results in green card
         - 8.5: Match mockup design
     """
-    st.markdown(dedent("""
+    st.markdown(clean_html("""
         <div style="margin-bottom: 1rem;">
             <h3 style="font-size: 1rem; font-weight: 600; color: #0F172A; margin-bottom: 0.5rem;">
                 Reform scenario parameters
@@ -269,6 +273,25 @@ def _display_scenario_controls(data: pd.Series, country_name: str) -> None:
     st.markdown('<p style="font-size: 0.75rem; color: #64748B; margin-top: -0.5rem;">Direct reduction in total debt owed</p>', unsafe_allow_html=True)
     
     st.markdown('</div>', unsafe_allow_html=True)
+
+    # AI Scenario Integration (Placeholder for Phase 2)
+    st.markdown(clean_html("""
+        <div style="margin-bottom: 1.5rem; padding: 1rem; background: #F8FAFC; border: 1px dashed #94A3B8; border-radius: 0.75rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="font-size: 1.25rem;">🤖</span>
+                    <div>
+                        <p style="font-size: 0.85rem; font-weight: 600; color: #334155; margin: 0;">AI Shock Simulator</p>
+                        <p style="font-size: 0.7rem; color: #64748B; margin: 0;">Predictive Governance (Phase 2)</p>
+                    </div>
+                </div>
+                <button style="background: #E2E8F0; color: #94A3B8; border: none; padding: 0.35rem 0.75rem; border-radius: 0.35rem; font-size: 0.75rem; font-weight: 600; cursor: not-allowed;">Coming Soon</button>
+            </div>
+            <p style="font-size: 0.75rem; color: #64748B; margin-top: 0.5rem;">
+                Generate complex shock scenarios (e.g., "Commodity Crash + Pandemic") using generative models.
+            </p>
+        </div>
+    """), unsafe_allow_html=True)
     
     # Calculate restructuring impact
     current_debt = data.get('total_debt_usd', 0)
@@ -371,7 +394,7 @@ def _display_fiscal_space_composition(fiscal_space_usd: float) -> None:
     vaccines = calculate_opportunity_cost(fiscal_space_usd, 'vaccine_dose')
     teachers = calculate_opportunity_cost(fiscal_space_usd, 'teacher')
     
-    st.markdown(dedent("""
+    st.markdown(clean_html("""
         <div style="background: white; border: 1px solid #E2E8F0; border-radius: 0.75rem; padding: 1rem;">
             <p style="font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.16em; color: #64748B; margin-bottom: 0.75rem;">
                 Freed fiscal space could fund
@@ -380,8 +403,7 @@ def _display_fiscal_space_composition(fiscal_space_usd: float) -> None:
     """), unsafe_allow_html=True)
     
     # Schools
-    # Schools
-    st.markdown(dedent(f"""
+    st.markdown(clean_html(f"""
         <div style="display: flex; align-items: center; gap: 0.5rem;">
             <div style="height: 2rem; width: 2rem; border-radius: 0.375rem; background: #DBEAFE; display: flex; align-items: center; justify-content: center;">
                 <span style="font-size: 1rem;">🏫</span>
@@ -394,8 +416,7 @@ def _display_fiscal_space_composition(fiscal_space_usd: float) -> None:
     """), unsafe_allow_html=True)
     
     # Hospitals
-    # Hospitals
-    st.markdown(dedent(f"""
+    st.markdown(clean_html(f"""
         <div style="display: flex; align-items: center; gap: 0.5rem;">
             <div style="height: 2rem; width: 2rem; border-radius: 0.375rem; background: #FEE2E2; display: flex; align-items: center; justify-content: center;">
                 <span style="font-size: 1rem;">🏥</span>
@@ -408,8 +429,7 @@ def _display_fiscal_space_composition(fiscal_space_usd: float) -> None:
     """), unsafe_allow_html=True)
     
     # Vaccines
-    # Vaccines
-    st.markdown(dedent(f"""
+    st.markdown(clean_html(f"""
         <div style="display: flex; align-items: center; gap: 0.5rem;">
             <div style="height: 2rem; width: 2rem; border-radius: 0.375rem; background: #DCFCE7; display: flex; align-items: center; justify-content: center;">
                 <span style="font-size: 1rem;">💉</span>
@@ -422,8 +442,7 @@ def _display_fiscal_space_composition(fiscal_space_usd: float) -> None:
     """), unsafe_allow_html=True)
     
     # Teachers
-    # Teachers
-    st.markdown(dedent(f"""
+    st.markdown(clean_html(f"""
         <div style="display: flex; align-items: center; gap: 0.5rem;">
             <div style="height: 2rem; width: 2rem; border-radius: 0.375rem; background: #FEF3C7; display: flex; align-items: center; justify-content: center;">
                 <span style="font-size: 1rem;">👨‍🏫</span>
@@ -435,7 +454,7 @@ def _display_fiscal_space_composition(fiscal_space_usd: float) -> None:
         </div>
     """), unsafe_allow_html=True)
     
-    st.markdown(dedent("""
+    st.markdown(clean_html("""
             </div>
         </div>
     """), unsafe_allow_html=True)

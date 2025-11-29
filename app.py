@@ -30,15 +30,15 @@ st.markdown("""
         .stApp {
         background-color: #F8FAFB;
         }
-        
+
     footer {visibility: hidden;}
     .stDeployButton {display:none;}
-    
+
         [data-testid="stSidebar"] {
             background-color: white;
         border-right: 2px solid #E2E8F0;
     }
-    
+
     .metric-card {
         background: white;
         padding: 1.5rem;
@@ -47,12 +47,12 @@ st.markdown("""
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         transition: all 0.2s;
     }
-    
+
     .metric-card:hover {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
     }
-    
+
     .sdg-badge {
         display: inline-flex;
         align-items: center;
@@ -63,30 +63,30 @@ st.markdown("""
         margin-right: 0.5rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .sdg-1, .sdg-2 { background: #E5243B; color: white; }
     .sdg-8, .sdg-9 { background: #A21942; color: white; }
     .sdg-16, .sdg-17 { background: #00689D; color: white; }
-    
+
     .alert-box {
         padding: 1rem;
         border-radius: 0.5rem;
         margin: 1rem 0;
         border-left: 4px solid;
     }
-    
+
     .alert-danger {
         background: #FEF2F2;
         border-color: #EF4444;
         color: #7F1D1D;
     }
-    
+
     .alert-success {
         background: #ECFDF5;
         border-color: #10B981;
         color: #065F46;
     }
-    
+
     .section-header {
         font-size: 1.75rem;
         font-weight: 700;
@@ -95,7 +95,7 @@ st.markdown("""
         padding-bottom: 0.5rem;
         border-bottom: 2px solid #E2E8F0;
     }
-    
+
     .insight-panel {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
@@ -228,15 +228,17 @@ def build_recommendation_cards(features: pd.DataFrame,
             continue
 
         current_metric = latest_row[best["coefficient"]].iloc[0]
-        cards.append({
-            "Country": country,
-            "Narrative": template["title"],
-            "Finding":
-            f"β = {best['beta']:.2f} with R² {best['r_squared']:.2f}. Every 1pp change in this driver shifts the deficit meaningfully.",
-            "Action": template["action"],
-            "Target": template["target"](current_metric),
-            "Timeline": template["timeline"],
-        })
+        cards.append(
+            {
+                "Country": country,
+                "Narrative": template["title"],
+                "Finding": f"β = {
+                    best['beta']:.2f} with R² {
+                    best['r_squared']:.2f}. Every 1pp change in this driver shifts the deficit meaningfully.",
+                "Action": template["action"],
+                "Target": template["target"](current_metric),
+                "Timeline": template["timeline"],
+            })
     return cards
 
 
@@ -602,7 +604,7 @@ elif page == "🧮 Driver Analysis":
             st.dataframe(subset[[
                 "coefficient", "beta", "p_value", "r_squared", "n_obs"
             ]],
-                         use_container_width=True)
+                use_container_width=True)
             top_driver = subset.iloc[0]
             st.markdown(f"""
                 **Interpretation:** Every 1pp increase in `{top_driver['coefficient']}` shifts the deficit by
@@ -703,8 +705,10 @@ elif page == "⚠️ Risk & Forecast":
                     name="95% CI",
                 ))
         fig.update_layout(
-            title=
-            f"{forecast_country}: {metric_choice.replace('_', ' ').title()} outlook",
+            title=f"{forecast_country}: {
+                metric_choice.replace(
+                    '_',
+                    ' ').title()} outlook",
             yaxis_title="Percent of GDP")
         st.plotly_chart(fig, use_container_width=True)
 
