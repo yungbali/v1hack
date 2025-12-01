@@ -1,6 +1,6 @@
 """
 Fiscal Intelligence Dashboard for Policy Impact
-10Alytics Hackathon: Transforming Fiscal Data into Actionable Insights
+Transforming Fiscal Data into Actionable Insights
 """
 
 import json
@@ -56,7 +56,7 @@ def clean_html(html: str) -> str:
 
 # Page configuration
 st.set_page_config(
-    page_title="Fiscal Intelligence for Policy Impact | 10Alytics",
+    page_title="Fiscal Intelligence for Policy Impact",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded")
@@ -780,7 +780,7 @@ with st.sidebar:
                 📊 Fiscal Intelligence
             </h1>
             <p style="font-size: 0.875rem; color: #64748B; margin: 0.5rem 0 0 0;">
-                10Alytics Hackathon
+                Evidence-Based Policy Solutions
             </p>
         </div>
     """,
@@ -1906,7 +1906,7 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 st.markdown("""
     <div style="padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 0.75rem; text-align: center; color: white;">
         <h3 style="font-size: 1.75rem; font-weight: 700; margin: 0 0 1rem 0;">
-            📊 10Alytics Hackathon
+            📊 Fiscal Intelligence Platform
         </h3>
         <p style="font-size: 1.125rem; margin: 0;">
             Transforming Fiscal Data into Sustainable Development Solutions

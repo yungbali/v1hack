@@ -18,7 +18,7 @@
 ## 📊 Data Foundation & Methodology
 
 ### Source Intelligence
-- **Dataset**: 10Alytics Hackathon Fiscal Data (sole source)
+- **Dataset**: Fiscal Data (sole source)
 - **Coverage**: 3,193 records × 16 countries × 25 years (2000–2025)
 - **Indicators**: 31 metrics spanning revenue, expenditure, debt, GDP, inflation, trade, unemployment
 - **Temporal Granularity**: Yearly, Quarterly, Monthly, Biannual
