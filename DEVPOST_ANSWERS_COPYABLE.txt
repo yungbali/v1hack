@@ -1,0 +1,253 @@
+═══════════════════════════════════════════════════════════════
+DEVPOST KIRO QUESTIONS - COPY-PASTE ANSWERS
+═══════════════════════════════════════════════════════════════
+
+────────────────────────────────────────────────────────────────
+QUESTION 1: VIBE CODING
+────────────────────────────────────────────────────────────────
+
+We structured Kiro conversations in three phases:
+
+PHASE 1: CONTEXT SETTING (Hour 0-1)
+- Shared Excel data file with 3,193 fiscal records
+- Asked Kiro to analyze data quality
+- Result: Kiro discovered 396 duplicates, inconsistent units, missing data
+
+PHASE 2: INCREMENTAL BUILDING (Hour 1-5)
+- Natural language requirements: "I need regression analysis to identify what drives budget deficits"
+- Kiro asked clarifying questions, we refined together
+- Kiro generated complete implementations, we tested, moved to next feature
+
+PHASE 3: INTEGRATION (Hour 5-6)
+- Conversational debugging: "The simulator isn't updating in real-time"
+- Kiro diagnosed and fixed issues
+- Iterative polish for policy audience
+
+MOST IMPRESSIVE CODE GENERATION:
+
+The Regression & Forecasting Pipeline (scripts/driver_risk_forecast.py - 400+ lines)
+
+What we asked:
+"Build a statistical analysis pipeline that:
+1. Runs Multiple Linear Regression to identify deficit drivers for each country
+2. Uses ARIMA to forecast debt trajectories 3 years ahead
+3. Detects anomalies using Z-scores
+4. Outputs results as CSVs for the dashboard"
+
+What Kiro generated in ONE iteration:
+- Feature engineering (revenue volatility, fiscal burden calculations)
+- OLS regression with statsmodels, proper error handling
+- ARIMA(1,1,1) forecasting with confidence intervals
+- Z-score anomaly detection
+- CSV output generation
+
+Why impressive:
+- Kiro understood statistical concepts (rolling windows, OLS, ARIMA order selection)
+- Added proper error handling for sparse time series
+- Implemented confidence intervals correctly
+- This would have taken 2-3 days manually - Kiro did it in 5 minutes
+
+The conversation:
+1. We: "I need regression analysis"
+2. Kiro: "What's your dependent variable and what drivers should I test?"
+3. We: "Deficit is dependent, test revenue volatility, wage bills, fiscal burden, GDP growth"
+4. Kiro: *generates complete pipeline*
+5. We: "Can you add forecasting too?"
+6. Kiro: *adds ARIMA*
+7. We: "Perfect, now add anomaly detection"
+8. Kiro: *adds Z-score analysis*
+
+Total: 10 minutes conversation, 400+ lines of production-ready code.
+
+────────────────────────────────────────────────────────────────
+QUESTION 2: AGENT HOOKS
+────────────────────────────────────────────────────────────────
+
+N/A - We didn't use agent hooks for this project due to the tight hackathon timeline. We focused on specs-driven development instead.
+
+Potential hooks we'd add for future development:
+1. Data Refresh Hook: Trigger when Excel file updates → Auto-run validation
+2. Test Hook: Trigger on file save → Run property-based tests
+3. Documentation Hook: Trigger when function added → Generate docstring
+
+────────────────────────────────────────────────────────────────
+QUESTION 3: SPEC-DRIVEN DEVELOPMENT
+────────────────────────────────────────────────────────────────
+
+SPEC STRUCTURE:
+
+We created .kiro/specs/africa-debt-dashboard/ with:
+
+1. requirements.md (10 user stories, 50+ acceptance criteria)
+Each requirement used "WHEN...THE...SHALL" format:
+
+"WHEN the debt service section renders, THE Dashboard SHALL display KPI tiles showing average debt service as percentage of revenue"
+
+"WHEN displaying debt service bars, THE Dashboard SHALL color-code bars as red when >30%, yellow when 20-30%, green when <20%"
+
+This gave Kiro unambiguous instructions.
+
+2. design.md (Architecture + Data Models + 20 Correctness Properties)
+- System architecture diagrams
+- DataFrame schemas with column types
+- Function signatures with type hints
+- Correctness properties for testing
+
+Example:
+def create_africa_heatmap(df: pd.DataFrame, metric: str = 'debt_to_gdp', year: int = 2024) -> go.Figure
+
+3. tasks.md (100+ implementation tasks)
+Broke project into atomic tasks:
+
+"[x] 4.1 Create debt service pressure calculation
+  - Formula: (debt_service_usd / (gdp_usd * revenue_pct_gdp / 100)) * 100
+  - Requirements: 3.1"
+
+Each task referenced specific requirements for traceability.
+
+HOW SPECS IMPROVED DEVELOPMENT:
+
+1. Eliminated Ambiguity
+- Without specs: "Build a dashboard" → 20 clarifying questions
+- With specs: Kiro knows exactly what to build
+
+2. Enabled Systematic Execution
+- Kiro worked through 100+ tasks in order
+- Each task built on previous ones
+- No backtracking or rework
+
+3. Maintained Consistency
+- Color palette defined once → Used across 20+ charts
+- Naming conventions specified → Applied throughout
+- Error handling patterns → Replicated everywhere
+
+4. Prevented Scope Creep
+- If not in requirements.md, we didn't build it
+- Stayed focused on core value
+
+5. Created Audit Trail
+- Every line of code traces back to a requirement
+- Critical for policy credibility
+
+SPECS VS. VIBE CODING:
+
+Vibe Coding (Conversational):
+- Setup: 0 minutes
+- Clarity: Requires back-and-forth
+- Consistency: Varies
+- Best for: Exploration, prototyping
+
+Spec-Driven:
+- Setup: 60 minutes (write specs)
+- Clarity: Unambiguous from start
+- Consistency: Enforced by spec
+- Best for: Production systems
+
+OUR HYBRID APPROACH:
+
+Hour 0-1: Vibe Coding
+- Explored data conversationally
+- Discovered quality issues
+- Prototyped ideas
+
+Hour 1-6: Spec-Driven
+- Wrote comprehensive specs
+- Kiro executed systematically
+- Built production-ready system
+
+Result: Best of both worlds.
+
+KEY INSIGHT:
+
+Specs are an investment that pays 20x returns:
+- 60 minutes writing specs
+- 5 hours of flawless execution
+- vs. 10+ hours of conversational back-and-forth
+
+For hackathons with tight timelines, specs are actually FASTER because they eliminate iteration cycles.
+
+SPECIFIC EXAMPLE:
+
+Instead of 10 minutes of back-and-forth about regression, we wrote:
+
+"WHEN the driver analysis runs, THE System SHALL:
+1. Calculate revenue volatility as 3-year rolling standard deviation
+2. Calculate fiscal burden as debt_service / (GDP × revenue%)
+3. Run OLS regression with deficit as dependent variable
+4. Output β coefficients, p-values, R², and observation count
+5. Handle countries with <8 years of data gracefully"
+
+Kiro generated complete implementation in one shot. No questions needed.
+
+────────────────────────────────────────────────────────────────
+QUESTION 4: STEERING DOCS
+────────────────────────────────────────────────────────────────
+
+N/A - We didn't create custom steering docs for this project. Our comprehensive specs (requirements.md, design.md) provided all necessary context.
+
+Why we didn't need steering:
+- Specs were detailed enough
+- Problem domain (fiscal analysis) didn't require specialized terminology beyond specs
+- Kiro's default behavior worked well for statistical computing and web development
+
+Where steering would help (future iterations):
+- Policy language conventions for government audiences
+- Statistical reporting standards
+- Data quality documentation patterns
+
+For this hackathon sprint, specs were sufficient. For production serving multiple governments, we'd add steering docs for domain-specific conventions.
+
+────────────────────────────────────────────────────────────────
+QUESTION 5: MCP (MODEL CONTEXT PROTOCOL)
+────────────────────────────────────────────────────────────────
+
+N/A - We didn't use MCP extensions for this project. Built-in Kiro capabilities (file operations, code generation, specs execution) were sufficient.
+
+Why we didn't need MCP:
+- All data was local (Excel file)
+- No external API integrations during development
+- No specialized tools required beyond Python standard library
+
+Where MCP would be valuable (future development):
+1. World Bank API MCP Server: Direct integration for live fiscal data
+2. IMF Data MCP Server: Real-time GDP projections
+3. Statistical Analysis MCP: Specialized econometric tools
+4. Policy Database MCP: Historical policy interventions
+
+For this hackathon, we focused on analytical capabilities with cached data. For production, MCP would enable real-time data integration.
+
+────────────────────────────────────────────────────────────────
+SUMMARY: HOW KIRO ENABLED THIS PROJECT
+────────────────────────────────────────────────────────────────
+
+PRIMARY USAGE: Spec-Driven Development (95% of value)
+- Wrote comprehensive specs (requirements, design, tasks)
+- Kiro executed 100+ tasks systematically
+- Generated 3,000+ lines of production-ready code
+- 6 hours total development time
+
+SECONDARY USAGE: Vibe Coding (5% of value)
+- Initial data exploration
+- Iterative refinement and debugging
+- Conversational problem-solving
+
+NOT USED (but valuable for future):
+- Agent Hooks (would automate data refresh)
+- Steering Docs (would standardize policy language)
+- MCP (would enable real-time APIs)
+
+THE BOTTOM LINE:
+
+Specs-driven development with Kiro transformed a 3-week project into a 6-hour sprint.
+
+Time Breakdown:
+- Writing specs: 1 hour
+- Kiro execution: 5 hours
+- Manual development estimate: 120 hours
+- TIME SAVINGS: 95%
+
+This is the future of software development.
+
+═══════════════════════════════════════════════════════════════
+END OF ANSWERS
+═══════════════════════════════════════════════════════════════
